@@ -1,0 +1,31 @@
+          <section>
+            <h1>
+              <span class="fragment fade-in" data-fragment-index="1">Asynchronous<br/></span> JavaScript
+            </h1>
+
+            <span class="fragment fade-out" data-fragment-index="1" data-dc-remove="true">
+              <pre class="code"><code>&lt;script src="behaviour.js"&gt;&lt;/script&gt;</code></pre>
+            </span>
+
+            <span class="fragment fade-in" data-fragment-index="1">
+              <pre class="code"><code>&lt;script src="behaviour.js" async&gt;&lt;/script&gt;</code></pre>
+            </span>
+
+            <div class="fragment" data-fragment-index="2">
+              <img src="img/perf/async-script-waterfall.svg" alt="Effect of asynchronous scripts shown on a waterfall diagram">
+            </div>
+
+            <aside class="notes" data-markdown>
+Whilst I have stated above that JavaScript is a blocking request it is possible to tell the browser that specific scripts are non-blocking by specifying the asynchronous flag:
+
+>>>>
+
+This means they are no longer part of the critical rendering path:
+
+>>>>
+
+This is supported in modern browsers and older browsers that don't understand it will still load the script in a blocking manner so it's a nice progressive enhancement.
+
+There is trade-off involved in making scripts non-blocking, you can't just put the `async` attribute on your scripts and it will magically work, there are a number of things that can potentially go wrong.  By using the `async` attribute you accept responsibility for the consequences of how your code executes.
+            </aside>
+          </section>

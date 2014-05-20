@@ -1,0 +1,20 @@
+          <section>
+            <h1>Unblocking first paint</h1>
+            <pre class="code fragment"><code>&lt;link rel="stylesheet" href="styles.css"/&gt;
+
+&lt;script src="behaviour.js"&gt;&lt;/script&gt;</code></pre>
+            <p class="fragment"><img src="img/perf/blocking-fist-paint.svg" alt="Requests blocking first paint shown on a waterfall diagram"></p>
+            <aside class="notes" data-markdown>
+This is where we move onto something more advanced.
+
+Up till now we've been looking at pages where the CSS and JavaScript have been blocking the first paint, and this is the behaviour we expect from web pages that have external CSS and JavaScript resources:
+
+>>>>
+
+And this is how they are loaded:
+
+>>>>
+
+In-between the start of the request and the first paint there will be nothing on the screen - and on a slow connection that could take some time.  What we want to do is to get something on screen as fast as possible for people.
+            </aside>
+          </section>

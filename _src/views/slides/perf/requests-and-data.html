@@ -1,0 +1,18 @@
+          <section>
+            <h1>Number of requests<br/>and data transferred</h1>
+            <p><img src="img/perf/critical.svg" alt="Page resources shown on a waterfall diagram"></p>
+            <p class="fragment">5 requests, 250KB, 2.11 seconds.</p>
+            <aside class="notes" data-markdown>
+Whilst the critical path lets you identify the resources that are key to the page load you should also pay attention to the amount of data and how you are transferring it.
+
+>>>>
+
+So in this hypothetical example we are transferring 250KB of data in five requests.
+
+Obviously, the more data we transfer the longer it's going to take.  But, as we saw at the start, each request we make over the network will incur a time overhead.
+
+So, if we transfer a lot of data in one request that's going to take time.  The usual culprit here is imagery - whilst those full bleed stock images might seem like a good idea is it really worth slowing down your page so much that people don't even bother waiting for them to load before going over to your competitor's site?
+
+Similarly, whilst splitting your JavaScript and CSS up into smaller files does make them easier to work on, if you're requesting a small amount of data spread over a dozen requests then just the request overheads alone will add up to several seconds.  Anything that can be combined into one request should be.
+            </aside>
+          </section>

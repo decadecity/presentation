@@ -1,0 +1,11 @@
+          <section>
+            <h1>Blocking and non-blocking requests</h1>
+            <p><img class="fragment" src="img/perf/page-render-waterfall-images.svg" alt="Blocking and non-blocking requests shown on a waterfall diagram"></p>
+            <aside class="notes" data-markdown>
+From this we can see that CSS and JavaScript block rendering of the page, the browser must resolve their effects before continuing.
+
+>>>>
+
+Images, and other assets that - crucially - don't alter the DOM, are referred to as "non-blocking" - the page can be rendered without the image having loaded and, once the image loads, it can be placed into the rendered document.
+            </aside>
+          </section>

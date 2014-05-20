@@ -1,0 +1,43 @@
+          <section>
+            <h1>Event Handling</h1>
+            <div class="comparison">
+              <div class="first fragment" data-fragment-index="1">
+                <h2>jQuery</h2>
+<pre><code class="prettyprint">element.off('click');</code></pre>
+              </div>
+              <div class="second fragment fade-in" data-fragment-index="2">
+                <h2>Vanilla JS</h2>
+
+<span class="fragment fade-out" data-fragment-index="4" data-dc-remove="true">
+<pre><code class="prettyprint">element.removeEventListener('click);</code><br><span class="err fragment fade-in" data-fragment-index="3">TypeError: Not enough arguments to EventTarget.removeEventListener.</span></pre>
+</span>
+<span class="fragment fade-in" data-fragment-index="4">
+<pre><code class="prettyprint">var listener = function (event) {
+  // Do code.
+};
+
+element.addEventListener('click', listener);
+
+element.removeEventListener('click', listener);</code></pre>
+</span>
+</div>
+</div>
+
+<aside class="notes" data-markdown>
+Now we can add events we can start removing them.  Again, here's the jQuery way:
+
+>>>>
+
+Just as we had `addEventListener`, vanilla JS gives us `removeEventListener`.  So we can just use this to remove the handler, like jQuery.
+
+>>>>
+
+Or not.  For `removeEventListener` we need to also pass in the function signature of the callback we assigned to the event handler.  This means that if we assigned an anonymous function we can't now unbind it.  Even if we remove the element from the DOM the handlers stay in memory.
+
+>>>>
+
+So - assuming we care about memory leaks - then we have to create our handlers as named functions and pass them in to `addEventListener` so we can then pass them into `removeEventListener`.
+
+So if this is what jQuery is using for event handling then how come it can unbind anonymous functions and remove elements from the DOM including all bound handlers? What would we need to do to replicate that functionality?  We'd need to maintain a registry of all event handlers bound to an element and then use that to clear the events.
+</aside>
+          </section>

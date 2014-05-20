@@ -1,0 +1,26 @@
+          <section>
+            <h1>Event Handling</h1>
+            <div class="comparison">
+              <div class="first fragment" data-fragment-index="1">
+                <h2>jQuery</h2>
+<pre><code class="prettyprint">element.on('click', function (event) {
+  // Do code.
+});</code></pre>
+              </div>
+              <div class="second fragment fade-in" data-fragment-index="2">
+                <h2>Vanilla JS</h2>
+<pre><code class="prettyprint">element.addEventListener('click', function (event) {
+  // Do code.
+});</code></pre>
+
+</div>
+</div>
+
+<aside class="notes" data-markdown>
+First off, the old jQuery way:
+
+>>>>
+
+In vanilla JS we have a method called `element.addEventListener` and this works just like the jQuery event handler.  Actually, like `querySelectorAll`, this is actually what jQuery is using behind the scenes.  So why are we loading in all of jQuery if all we're using is event handlers?
+</aside>
+          </section>

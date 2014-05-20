@@ -1,0 +1,35 @@
+          <section>
+            <h1>AJAX</h1>
+            <div class="comparison">
+              <div class="first fragment" data-fragment-index="1">
+                <h2>jQuery</h2>
+<pre><code class="prettyprint">$.get('/my/url', function(data) {
+  // Do code.
+});</code></pre>
+              </div>
+              <div class="second fragment fade-in" data-fragment-index="2">
+                <h2>Vanilla JS</h2>
+
+<pre><code class="prettyprint">var request = new XMLHttpRequest;
+request.open('GET', '/my/url');
+
+request.onload = function() {
+  if (request.status >= 200 &amp;&amp; request.status &lt; 400){
+    // Do code.
+  }
+};
+request.send();</code></pre>
+</span>
+</div>
+</div>
+
+<aside class="notes" data-markdown>
+So here's jQuery's GET method, it's the simplest example of AJAX.
+
+>>>>
+
+And here's the same thing in vanilla JS.  We create a new `XMLHttpRequest`, we tell it what HTTP verb to use and what URL to hit, we assign a callback for when it finishes, in that callback we check that the request was actually a success and then - finally - we dispatch the request.
+
+And this is just for the simplest possible use case.  I'm not going to go any deeper into AJAX but suffice it to say that when you want to start moving non-trivial amounts of information back and forth without jQuery it gets very complicated.
+</aside>
+          </section>

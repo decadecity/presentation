@@ -1,0 +1,48 @@
+
+          <section>
+            <h1>DOM Selection</h1>
+            <div class="comparison">
+              <div class="first fragment" data-fragment-index="1">
+                <h2>jQuery</h2>
+<pre><code class="prettyprint">$('#topnav li').each(function () {
+ // Do code.
+});
+</code></pre>
+              </div>
+              <div class="second fragment fade-in" data-fragment-index="2">
+                <h2>Vanilla JS</h2>
+  <span class="fragment fade-out" data-fragment-index="4" data-dc-remove="true">
+<pre><code class="prettyprint">document.querySelectorAll('#topnav li').forEach(function () {
+  // Do code.
+});</code>
+<span class="err fragment" data-fragment-index="3">TypeError: document.querySelectorAll(...).forEach is not a function</span></span></pre>
+  </span>
+</span>
+
+<span class="fragment" data-fragment-index="4"><pre><code class="prettyprint">Array.prototype.forEach.call(document.querySelectorAll('#topnav li'), function () {
+  // Do code.
+});</code></pre></span>
+              </div>
+            </div>
+            <aside class="notes" data-markdown>
+Let's use `querySelectorAll` to select a number of elements and perform an operation on each one. First, let's look at the bloated jQuery way:
+
+>>>>
+
+Now for some top-gun vanilla JS skillz. We're going to use `querySelectorAll` to select our objects.
+
+`querySelectorAll` returns a NodeList and we know we're in Chrome so we can just iterate over arrays using the native `forEach`, right?
+
+>>>>
+
+Well, no. That would be too easy. What `querySelectorAll` returns is an array like object that doesn't have array in its prototype chain.
+
+JavaScript - this is why people pick on you. You're returning an array like object with none of the array methods available. Go home, you're drunk.
+
+>>>>
+
+So what we need to do is use the `forEach` method from the array prototype:
+
+Now we can efficiently select DOM elements with some lightweight and easy to understand code we can move on to event handlers.
+            </aside>
+          </section>

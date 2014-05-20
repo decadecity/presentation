@@ -1,0 +1,24 @@
+          <section>
+            <h1>Critical path</h1>
+            <p>
+              <span class="fragment fade-in" data-fragment-index="1">
+                <img class="fragment fade-out" src="img/perf/critical.svg" alt="Page resources shown on a waterfall diagram" data-fragment-index="2" data-dc-remove="true">
+              </span>
+              <img class="fragment fade-in" data-fragment-index="2" src="img/perf/critical-path.svg" alt="Critical path shown on a waterfall diagram">
+            </p>
+            <aside class="notes" data-markdown>
+From the waterfall diagram we can identify which resources are key to the page load.
+
+>>>>
+
+In this diagram we can see which resources are contributing to the critical path.  We start with the HMTL - we can't do anything until we've got the HTML.
+
+Next we load the CSS and the JavaScript so that we can render the page.  As the browser knows it needs both of these it will request them at the same time.  In this case the JavaScript is taking longer to load than the CSS so the images can't start loading until the JavaScript has finished.
+
+The two images also start loading at the same time but, as the first one takes longer to load than the second, we can see that our overall timings only depend on the first image.
+
+>>>>
+
+This critical path lets us identify where we need to focus our efforts at making the page load faster.  In this case we should look at the JavaScript first - there's no point in making the CSS any faster because we'll still be waiting for the JavaScript.
+            </aside>
+          </section>

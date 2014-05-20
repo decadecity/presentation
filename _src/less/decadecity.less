@@ -1,0 +1,394 @@
+@dark-purple: #1e163d;
+@light-purple: #6b5ea6; // Not compliant vs dark purple
+@lighter-purple: #8d7cdb; // Not compliant vs yellow
+@lighter-purple-alt: #745cdc;
+
+@light-blue: #32b2d7; // Not compliant vs yellow
+@light-blue-alt: #48778a; // mucky - prefer mid blue.
+@mid-blue: #2a58e4; // use sparingly.
+
+@yellow: #fff8c4;
+
+@black: #000000;
+@grey: #666666;
+
+@red: #d72756;
+
+@background: @dark-purple;
+@background-text: @light-blue;
+@forground: @yellow;
+@forground-text: @black;
+
+@link-text: @light-purple;
+@link-text-light: @lighter-purple;
+
+@light-text: @grey;
+
+@shade: #444; // Shadow colour.
+
+body {
+  background-color: @forground;
+  font-family: sans-serif;
+}
+
+.reveal {
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  color: @forground-text;
+
+  .slides {
+    margin-top: -0.75em;
+  }
+
+  // Headers
+  h1, h2, h3, h4, h5, h6 {
+    color: @dark-purple;
+  }
+
+  // Links
+  a:not(.image) {
+    color: @light-purple;
+    text-decoration: underline;
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    -ms-transition: color .15s ease;
+    -o-transition: color .15s ease;
+    transition: color .15s ease;
+  }
+  a:not(.image):hover {
+    color: @dark-purple;
+    text-shadow: none;
+    border: none;
+  }
+  .roll span:after {
+    color: @light-blue;
+    background: @dark-purple;
+  }
+
+  // Images
+  section img {
+    margin: 15px 0px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 4px solid #eeeeee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  a:hover img {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #13daec;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+  }
+
+  // Navigation
+  .controls {
+    div.navigate-left,
+    div.navigate-left.enabled {
+      border-right-color: @light-blue;
+    }
+    div.navigate-right,
+    div.navigate-right.enabled {
+      border-left-color: @light-blue;
+    }
+    div.navigate-up,
+    div.navigate-up.enabled {
+      border-bottom-color: @light-blue;
+    }
+    div.navigate-down,
+    div.navigate-down.enabled {
+      border-top-color: @light-blue;
+    }
+    div.navigate-left.enabled:hover {
+      border-right-color: #71e9f4;
+    }
+    div.navigate-right.enabled:hover {
+      border-left-color: #71e9f4;
+    }
+    div.navigate-up.enabled:hover {
+      border-bottom-color: #71e9f4;
+    }
+    div.navigate-down.enabled:hover {
+      border-top-color: #71e9f4;
+    }
+  }
+
+  // Progress bar.
+  .progress {
+    background: rgba(0, 0, 0, 0.2);
+    span {
+      background: @light-purple;
+      -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    }
+  }
+
+  // Typography
+  p, ul, ol {
+    font-size: 1em; /* 16px */
+    line-height: 1.5em; /* 24px */
+    margin: 1.5em 0 1.5em 0;
+  }
+  h1 {
+    font-size: 1.5em; /* 24px */
+    margin-bottom: 0;
+    margin-top: 1em;
+    &.title {
+      font-weight: bold;
+    }
+  }
+  h2 {
+    font-size: 1.375em; /* 22px */
+    margin-bottom: 0;
+    margin-top: 1.0909em;
+  }
+  h3 {
+    font-size: 1.25em; /* 20px */
+    margin-bottom: 0;
+    margin-top: 1.2em;
+  }
+  h4 {
+    font-size: 1.125em; /* 18px */
+    margin-bottom: 0;
+    margin-top: 1.3333em;
+  }
+  .highlight {
+    color: @light-purple;
+    font-weight: bold;
+  }
+  .short {
+    margin-bottom: 0;
+  }
+
+  // Boxes
+  pre, blockquote {
+    overflow: auto;
+    border: 0.125em solid #888;
+    padding: 0.5em;
+    background: #ffffff;
+    box-shadow: none;
+    text-align: left;
+  }
+  blockquote p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  // Override.
+  section img {
+    border: none;
+    box-shadow: none;
+  }
+
+  // Light on dark.
+  .invert {
+    h1, h3, a, .contact, .highlight {
+      color: @light-blue;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .name {
+    vertical-align: middle;
+    img {
+      vertical-align: middle;
+      margin-right: 0.5em;
+    }
+  }
+
+  .contact-icon {
+    width: 1.5em;
+    height: 1em;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    img {
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  // Future friendly
+  .ff-bg {
+    height: 566px;
+    left: 0;
+    opacity: 0.1;
+    position: relative;
+    top: -192px;
+    .ff-atrib {
+      position: relative;
+      top: 10%;
+    }
+  }
+  .ff-link {
+    margin-bottom: 0 !important;
+  }
+
+  .roman {
+    font-family: serif;
+  }
+
+  .image-valign {
+    img {
+      vertical-align: middle;
+    }
+  }
+
+} //.reveal
+
+::selection {
+  color: white;
+  background: #ff5e99;
+  text-shadow: none;
+}
+
+.wofr .reveal h2 {
+  margin-top: 0.5em;
+}
+.wofr .reveal blockquote {
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.err {
+  color: red;
+}
+
+// Monty python image.
+#pythons {
+  & .inverted {
+    color: white;
+    font-weight: bold !important;
+    text-shadow: -0.0625em -0.0625em 0 #000, 0.0625em -0.0625em 0 #000, -0.0625em 0.0625em 0 #000, 0.0625em 0.0625em 0 #000;
+    p {
+      margin-bottom: 0;
+    }
+    ul {
+      margin-top: 0;
+    }
+  }
+  & .image-bg {
+    position: relative;
+  }
+  & .image-overlaid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    margin-left: 6em;
+    ul {
+      margin-left: 1em;
+    }
+  }
+  & h1 {
+    margin-top: 0;
+  }
+}
+
+// Doge
+@font-face {
+  font-family: 'Comic Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Comic Sans'), local('Comic Sans MS'), url(../../font/comic_sans_ms-webfont.woff) format('woff');
+}
+#doge {
+  .doge {
+    width: 12em;
+  }
+
+  .doge-quotes {
+    position: relative;
+    list-style-type: none;
+    font-family: "Comic Sans", "Comic Sans MS", cursive;
+    text-transform: lowercase;
+    li {
+      position: absolute;
+    }
+    .quote3 {
+      top: -1em;
+      left: -12em;
+      color: @red;
+    }
+    .quote2 {
+      top: -4em;
+      left: -8em;
+      color: @light-purple;
+    }
+    .quote1 {
+      top: -8em;
+      left: -14em;
+      color: @mid-blue;
+    }
+    .quote4 {
+      top: 1em;
+      left: -5em;
+      color: @light-blue-alt;
+    }
+  }
+}
+
+.light {
+  color: @grey;
+}
+
+.avatar {
+  width: 1.5em;
+}
+
+.invisible {
+  color: @dark-purple;
+}
+
+.remove {
+  display: none !important;
+}
+
+#strap {
+  color: @light-blue;
+  background-color: @dark-purple;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 0.5em 1em 0.5em 1em;
+  overflow: hidden;
+  z-index: 1;
+  .name {
+    float: left;
+  }
+  .twitter {
+    float: right;
+    margin-right: 5%;
+  }
+}
+
+
+/* Decade City style code highlighting */
+.hljs{color:#1e163d}.hljs-comment,.hljs-template_comment,.diff .hljs-header,.hljs-javadoc{color:#666;font-style:italic}.hljs-keyword,.css .rule .hljs-keyword,.hljs-winutils,.javascript .hljs-title,.nginx .hljs-title,.hljs-subst,.hljs-request,.hljs-status{color:#1e163d;font-weight:bold}.hljs-number,.hljs-hexcolor,.ruby .hljs-constant{color:#48778a}.hljs-string,.hljs-tag .hljs-value,.hljs-phpdoc,.tex .hljs-formula{color:#d72756}.hljs-title,.hljs-id,.coffeescript .hljs-params,.scss .hljs-preprocessor{color:#6b5ea6;font-weight:bold}.javascript .hljs-title,.lisp .hljs-title,.clojure .hljs-title,.hljs-subst{font-weight:normal}.hljs-class .hljs-title,.haskell .hljs-type,.vhdl .hljs-literal,.tex .hljs-command{color:#6b5ea6;font-weight:bold}.hljs-tag,.hljs-tag .hljs-title,.hljs-rules .hljs-property,.django .hljs-tag .hljs-keyword{color:#6b5ea6;font-weight:normal}.hljs-attribute,.hljs-variable,.lisp .hljs-body{color:#2a58e4}.hljs-regexp{color:#009926}.hljs-symbol,.ruby .hljs-symbol .hljs-string,.lisp .hljs-keyword,.tex .hljs-special,.hljs-prompt{color:#990073}.hljs-built_in,.lisp .hljs-title,.clojure .hljs-built_in{color:#745cdc}.hljs-preprocessor,.hljs-pragma,.hljs-pi,.hljs-doctype,.hljs-shebang,.hljs-cdata{color:#6b5ea6;font-weight:bold}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.diff .hljs-change{background:#0086b3}.hljs-chunk{color:#aaa}
+
+
+
+/* Highland Fling */
+@font-face {
+  font-family: 'IM Fell Double Pica SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('IM FELL Double Pica SC'), local('IM_FELL_Double_Pica_SC'), url(../../font/IM_Fell.woff) format('woff');
+}
+.fling {
+  font-family: "IM Fell Double Pica SC",serif !important;
+}
+.fling h2, .fling a {
+  color: #444 !important;
+  text-decoration: none !important;
+}
