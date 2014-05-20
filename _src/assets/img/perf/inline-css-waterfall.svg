@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.2"
+   width="562"
+   height="166"
+   id="svg37769">
+  <defs
+     id="defs37771" />
+  <metadata
+     id="metadata37774">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(316.49721,-112.65625)"
+     id="layer1">
+    <path
+       d="m 112.5371,274.66799 0,-119.8539"
+       id="path38464"
+       style="fill:none;stroke:#6b5ea6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m -83.938597,274.66799 0,-119.8539"
+       id="path3856-8-4-8"
+       style="fill:none;stroke:#6b5ea6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <rect
+       width="193.54707"
+       height="24.055227"
+       x="-81.693512"
+       y="183.88669"
+       id="rect3086-7-2"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="127.44671"
+       height="24.297485"
+       x="112.60735"
+       y="224.3623"
+       id="rect4040-7"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       x="51.192284"
+       y="138.31358"
+       id="text37950"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#6b5ea6;fill-opacity:1;stroke:none;font-family:sans-serif"><tspan
+         x="51.192284"
+         y="138.31358"
+         id="tspan37952"><tspan
+           x="51.192284"
+           y="138.31358"
+           id="tspan37954"
+           style="font-size:26px;fill:#6b5ea6;fill-opacity:1">First paint</tspan></tspan></text>
+    <text
+       x="-94.47377"
+       y="206.18768"
+       id="text39305"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:150%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"><tspan
+         x="-94.47377"
+         y="206.18768"
+         id="tspan39309"
+         style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1">HTML + CSS</tspan><tspan
+         x="-94.47377"
+         y="245.18768"
+         id="tspan39311"
+         style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1">Async JavaScript</tspan></text>
+  </g>
+</svg>

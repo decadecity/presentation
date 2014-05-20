@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.2"
+   width="587"
+   height="259"
+   id="svg37769">
+  <defs
+     id="defs37771" />
+  <metadata
+     id="metadata37774">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(279.53945,-125.84375)"
+     id="layer1">
+    <path
+       d="m 198.56005,380.8402 0,-213.52746"
+       id="path38464"
+       style="fill:none;stroke:#6b5ea6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       x="-109.88549"
+       y="231.02553"
+       transform="scale(1.0815103,0.92463289)"
+       id="text37816"
+       xml:space="preserve"
+       style="font-size:25.91759682px;font-style:normal;font-weight:normal;text-align:end;line-height:153.99999619%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#1e163d;fill-opacity:1;stroke:none;font-family:sans-serif"><tspan
+         x="-109.88549"
+         y="231.02553"
+         id="tspan37842"
+         style="font-size:26px;line-height:153.99999619%">HTML page</tspan><tspan
+         x="-109.88549"
+         y="271.06552"
+         id="tspan37915"
+         style="font-size:26px;line-height:153.99999619%">CSS</tspan><tspan
+         x="-109.88549"
+         y="311.10553"
+         id="tspan37917"
+         style="font-size:26px;line-height:153.99999619%">JavaScript</tspan><tspan
+         x="-109.88549"
+         y="351.14554"
+         id="tspan37919"
+         style="font-size:26px;line-height:153.99999619%">Image</tspan><tspan
+         x="-109.88549"
+         y="391.18552"
+         id="tspan37921"
+         style="font-size:26px;line-height:153.99999619%">Image</tspan></text>
+    <path
+       d="m -103.43995,380.8402 0,-213.52746"
+       id="path3856-8-4-8"
+       style="fill:none;stroke:#6b5ea6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <rect
+       width="73.161903"
+       height="25.251619"
+       x="70.630295"
+       y="232.24237"
+       id="rect3084-7-2"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="172.08643"
+       height="24.277826"
+       x="-101.80481"
+       y="195.77539"
+       id="rect3086-7-2"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="127.44671"
+       height="24.297485"
+       x="70.607346"
+       y="272.3623"
+       id="rect4040-7"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="104.01424"
+       height="24.6036"
+       x="198.36"
+       y="306.6405"
+       id="rect4042-9"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="55.996605"
+       height="25.692207"
+       x="198.36"
+       y="341.66504"
+       id="rect4044-6"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       x="153.13393"
+       y="150.71458"
+       id="text37950"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#6b5ea6;fill-opacity:1;stroke:none;font-family:sans-serif"><tspan
+         x="153.13393"
+         y="150.71458"
+         id="tspan37952"><tspan
+           x="153.13393"
+           y="150.71458"
+           id="tspan37954"
+           style="font-size:26px;fill:#6b5ea6;fill-opacity:1">Render</tspan></tspan></text>
+  </g>
+</svg>

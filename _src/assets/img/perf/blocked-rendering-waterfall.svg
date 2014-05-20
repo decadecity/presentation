@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.2"
+   width="578"
+   height="196"
+   id="svg37769">
+  <defs
+     id="defs37771" />
+  <metadata
+     id="metadata37774">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-313.90106,210.04976)"
+     id="layer2"
+     style="display:inline">
+    <g
+       transform="translate(634.30067,-327.08101)"
+       id="layer1-4">
+      <path
+         d="m 212.88168,309.04464 0,-150.05353"
+         id="path38464-0"
+         style="fill:none;stroke:#6b5ea6;stroke-width:3.35674429;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m -89.761578,309.04464 0,-150.05353"
+         id="path3856-8-4-8-9"
+         style="fill:none;stroke:#6b5ea6;stroke-width:3.35674429;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         width="73.161903"
+         height="25.251619"
+         x="84.630295"
+         y="224.24237"
+         id="rect3084-7-2"
+         style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <rect
+         width="172.08643"
+         height="24.277826"
+         x="-87.80481"
+         y="187.77539"
+         id="rect3086-7-2-4"
+         style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <rect
+         width="127.44671"
+         height="24.297485"
+         x="84.607346"
+         y="264.3623"
+         id="rect4040-7-9"
+         style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         x="123.19228"
+         y="142.31358"
+         id="text37950-6"
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#6b5ea6;fill-opacity:1;stroke:none;font-family:sans-serif"><tspan
+           x="123.19228"
+           y="142.31358"
+           id="tspan37952-2"><tspan
+             x="123.19228"
+             y="142.31358"
+             id="tspan37954-5"
+             style="font-size:26px;fill:#6b5ea6;fill-opacity:1">First paint</tspan></tspan></text>
+      <text
+         x="-100.47377"
+         y="210.18768"
+         id="text39305-8"
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:150%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"><tspan
+           x="-100.47377"
+           y="210.18768"
+           id="tspan39307"
+           style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1">HTML page</tspan><tspan
+           x="-100.47377"
+           y="249.18768"
+           id="tspan39309-9"
+           style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1">CSS</tspan><tspan
+           x="-100.47377"
+           y="288.18768"
+           id="tspan39311-0"
+           style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1">JavaScript</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(-313.90106,210.04976)"
+     id="layer3"
+     style="display:inline" />
+</svg>

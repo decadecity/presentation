@@ -43,6 +43,11 @@ module.exports = function(grunt) {
           {expand: true, flatten: false, cwd: 'lib/reveal.js/plugin/', src: ['**'], dest: 'public_html/plugin/'},
           {expand: true, flatten: false, cwd: 'lib/reveal.js/lib/', src: ['**'], dest: 'public_html/lib/'},
         ]
+      },
+      assets: {
+        files: [
+          {expand: true, flatten: false, cwd: '_src/assets/', src: ['**'], dest: 'public_html/assets/'},
+        ]
       }
     },
 
@@ -56,6 +61,18 @@ module.exports = function(grunt) {
       less: {
         files: ['_src/less/**/*.less'],
         tasks: ['less'],
+        options: {
+        }
+      },
+      reveal: {
+        files: ['lib/reveal.js/**'],
+        tasks: ['copy:reveal'],
+        options: {
+        }
+      },
+      assets: {
+        files: ['_src/assets/**'],
+        tasks: ['copy:assets'],
         options: {
         }
       }

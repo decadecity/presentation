@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   width="578"
+   height="196"
+   id="svg37769"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="inline-css-waterfall.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1468"
+     inkscape:window-height="805"
+     id="namedview39303"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.50730412"
+     inkscape:cx="108.42138"
+     inkscape:cy="62.857825"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs37771" />
+  <metadata
+     id="metadata37774">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="blocked"
+     style="display:inline"
+     transform="translate(-313.90106,210.04976)">
+    <g
+       id="layer1-4"
+       transform="translate(634.30067,-327.08101)">
+      <path
+         style="fill:none;stroke:#6b5ea6;stroke-width:3.35674429;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path38464-0"
+         d="m 212.88168,309.04464 0,-150.05353"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#6b5ea6;stroke-width:3.35674429;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path3856-8-4-8-9"
+         d="m -89.761578,309.04464 0,-150.05353"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect3084-7-2"
+         y="224.24237"
+         x="84.630295"
+         height="25.251619"
+         width="73.161903" />
+      <rect
+         style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect3086-7-2-4"
+         y="187.77539"
+         x="-87.80481"
+         height="24.277826"
+         width="172.08643" />
+      <rect
+         style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4040-7-9"
+         y="264.3623"
+         x="84.607346"
+         height="24.297485"
+         width="127.44671" />
+      <text
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#6b5ea6;fill-opacity:1;stroke:none;font-family:sans-serif"
+         xml:space="preserve"
+         id="text37950-6"
+         y="142.31358"
+         x="123.19228"
+         sodipodi:linespacing="125%"><tspan
+           id="tspan37952-2"
+           y="142.31358"
+           x="123.19228"><tspan
+             style="font-size:26px;fill:#6b5ea6;fill-opacity:1"
+             id="tspan37954-5"
+             y="142.31358"
+             x="123.19228">First paint</tspan></tspan></text>
+      <text
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:150%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
+         xml:space="preserve"
+         id="text39305-8"
+         y="210.18768"
+         x="-100.47377"
+         sodipodi:linespacing="150%"><tspan
+           style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1"
+           id="tspan39307"
+           y="210.18768"
+           x="-100.47377">HTML page</tspan><tspan
+           style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1"
+           id="tspan39309-9"
+           y="249.18768"
+           x="-100.47377">CSS</tspan><tspan
+           style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1"
+           id="tspan39311-0"
+           y="288.18768"
+           x="-100.47377">JavaScript</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="unblocked"
+     style="display:inline"
+     transform="translate(-313.90106,210.04976)">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#6b5ea6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path38464"
+       d="m 740.93534,-48.48758 0,-119.85389" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#6b5ea6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path3856-8-4-8"
+       d="m 544.45964,-48.48758 0,-119.85389" />
+    <rect
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="rect3086-7-2"
+       y="-139.26889"
+       x="546.70471"
+       height="24.055227"
+       width="193.54707" />
+    <rect
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="rect4040-7"
+       y="-98.793259"
+       x="741.00562"
+       height="24.297485"
+       width="127.44671" />
+    <text
+       sodipodi:linespacing="125%"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#6b5ea6;fill-opacity:1;stroke:none;display:inline;font-family:sans-serif"
+       xml:space="preserve"
+       id="text37950"
+       y="-184.842"
+       x="679.59052"><tspan
+         id="tspan37952"
+         y="-184.842"
+         x="679.59052"><tspan
+           style="font-size:26px;fill:#6b5ea6;fill-opacity:1"
+           id="tspan37954"
+           y="-184.842"
+           x="679.59052">First paint</tspan></tspan></text>
+    <text
+       sodipodi:linespacing="150%"
+       id="text39305"
+       y="-116.96788"
+       x="533.9245"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:150%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:sans-serif"
+       xml:space="preserve"><tspan
+         style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1"
+         id="tspan39309"
+         y="-116.96788"
+         x="533.9245"
+         sodipodi:role="line">HTML + CSS</tspan><tspan
+         style="font-size:26px;text-align:end;line-height:150%;text-anchor:end;fill:#1e163d;fill-opacity:1"
+         id="tspan39311"
+         y="-77.96788"
+         x="533.9245"
+         sodipodi:role="line">Async JavaScript</tspan></text>
+  </g>
+</svg>

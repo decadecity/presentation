@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="611"
+   height="223"
+   id="svg37769">
+  <defs
+     id="defs37771" />
+  <metadata
+     id="metadata37774">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(261.53943,-149.84375)"
+     id="layer1">
+    <text
+       x="-93.242073"
+       y="218.04738"
+       transform="scale(1.0815103,0.92463289)"
+       id="text37816"
+       xml:space="preserve"
+       style="font-size:25.91759682px;font-style:normal;font-weight:normal;text-align:end;line-height:153.99999619%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#1e163d;fill-opacity:1;stroke:none;font-family:sans-serif"><tspan
+         x="-93.242073"
+         y="218.04738"
+         id="tspan37842"
+         style="font-size:26px;line-height:153.99999619%">HTML page</tspan><tspan
+         x="-93.242073"
+         y="258.08737"
+         id="tspan37915"
+         style="font-size:26px;line-height:153.99999619%">CSS</tspan><tspan
+         x="-93.242073"
+         y="298.12738"
+         id="tspan37917"
+         style="font-size:26px;line-height:153.99999619%">JavaScript</tspan><tspan
+         x="-93.242073"
+         y="338.16739"
+         id="tspan37919"
+         style="font-size:26px;line-height:153.99999619%">Image</tspan><tspan
+         x="-93.242073"
+         y="378.20737"
+         id="tspan37921"
+         style="font-size:26px;line-height:153.99999619%">Image</tspan></text>
+    <path
+       d="m -85.43995,368.8402 0,-213.52746"
+       id="path3856-8-4-8"
+       style="fill:none;stroke:#6b5ea6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <rect
+       width="73.161903"
+       height="25.251619"
+       x="88.630295"
+       y="220.24237"
+       id="rect3084-7-2"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="172.08643"
+       height="24.277826"
+       x="-83.80481"
+       y="183.77539"
+       id="rect3086-7-2"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="127.44671"
+       height="24.297485"
+       x="88.607346"
+       y="260.3623"
+       id="rect4040-7"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="104.01424"
+       height="24.6036"
+       x="216.36"
+       y="294.6405"
+       id="rect4042-9"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       width="55.996605"
+       height="25.692207"
+       x="216.36"
+       y="329.66504"
+       id="rect4044-6"
+       style="fill:#32b2d7;fill-opacity:1;stroke:#1e163d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  </g>
+</svg>
