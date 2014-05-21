@@ -6,8 +6,8 @@ module.exports = function(grunt) {
 
     assemble: {
       options: {
-        assets: "_src/assets",
-        data:   "_src/data/*.json"
+        assets: '_src/assets',
+        data:   '_src/data/*.json'
       },
       project: {
         options: {
@@ -30,7 +30,8 @@ module.exports = function(grunt) {
       themes: {
         options: {},
         files: {
-          "public_html/css/theme/decadecity.css": "_src/less/decadecity.less"
+          'public_html/css/theme/decadecity.css': '_src/less/decadecity.less',
+          'public_html/css/theme/fling.css': '_src/less/fling.less'
         }
       }
     },
@@ -48,6 +49,11 @@ module.exports = function(grunt) {
         files: [
           {expand: true, flatten: false, cwd: '_src/assets/', src: ['**'], dest: 'public_html/assets/'},
         ]
+      },
+      js: {
+        files: [
+          {expand: true, flatten: false, cwd: '_src/js/', src: ['*.js'], dest: 'public_html/js/'},
+        ]
       }
     },
 
@@ -64,6 +70,12 @@ module.exports = function(grunt) {
         options: {
         }
       },
+      js: {
+        files: ['_src/js/**/*.js'],
+        tasks: ['copy:js'],
+        options: {
+        }
+      },
       reveal: {
         files: ['lib/reveal.js/**'],
         tasks: ['copy:reveal'],
@@ -75,6 +87,10 @@ module.exports = function(grunt) {
         tasks: ['copy:assets'],
         options: {
         }
+      },
+      livereload: {
+        options: { livereload: true },
+        files: ['public_html/**/*'],
       }
     }
   });

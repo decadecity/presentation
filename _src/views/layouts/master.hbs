@@ -43,8 +43,12 @@
 
     </div>
 
-
-    {{glob '_src/views/slides/_common/strap.html'}}
+    {{#if strap}}
+      {{glob '_src/views/slides/_common/strap.html'}}
+    {{/if}}
+    {{#if sponsors}}
+      {{glob '_src/views/slides/fling/sponsors.html'}}
+    {{/if}}
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
