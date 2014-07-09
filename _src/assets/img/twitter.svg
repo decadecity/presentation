@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="16.797533"
-   height="12.362844"
+   width="14.827256"
+   height="11.668407"
    id="svg3319"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 14">
+   sodipodi:docname="twitter.svg">
   <defs
      id="defs3321" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-199.45838"
-     inkscape:cy="-82.390002"
+     inkscape:zoom="15.839192"
+     inkscape:cx="22.847069"
+     inkscape:cy="10.346566"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,11 +34,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="470"
-     inkscape:window-height="442"
-     inkscape:window-x="474"
-     inkscape:window-y="396"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1440"
+     inkscape:window-height="845"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata3324">
     <rdf:RDF>
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,9 +55,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-574.45838,-437.60934)">
+     transform="translate(-575.74953,-438.90109)">
     <g
-       transform="matrix(0.00204506,7.340548e-4,-7.340548e-4,0.00204506,578.00575,436.75469)"
+       transform="matrix(0.00217186,6.4389992e-5,-6.4389992e-5,0.00217186,576.06468,438.60379)"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;display:inline"
        id="Livello_x0020_1">
       <metadata

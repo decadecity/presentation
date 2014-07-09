@@ -1,0 +1,7 @@
+{
+  "presentations": [
+    { "file": "daw.html", "title": "Building for the device agnostic web" },
+    { "file": "jquery.html", "title": "What has jQuery ever done for us?" },
+    { "file": "perf.html", "title": "Introduction to web page performance" }
+  ]
+}
