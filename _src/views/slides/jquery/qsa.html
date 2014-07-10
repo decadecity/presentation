@@ -1,7 +1,11 @@
          <section>
             <h1>DOM Selection</h1>
-            <p><code><span class="pln">document</span><span class="pun">.</span><span class="pln">querySelectorAll</span><span class="pun">(</span><span class="str">'</span><span class="tag">element</span><span class="kwd">#id</span><span class="typ">.class<span class="str">'</span><span class="pun">)</span></code></p>
+            <p class="fragment"><code><span class="pln">document</span><span class="pun">.</span><span class="pln">querySelectorAll</span><span class="pun">(</span><span class="str">'</span><span class="tag">element</span><span class="kwd">#id</span><span class="typ">.class<span class="str">'</span><span class="pun">)</span></code></p>
             <aside class="notes" data-markdown>
+DOM selection is one of the mainstays of writing jQuery but there's now a native method.
+
+>>>>
+
 document.querySelectorAll('element#id.class') FTW!
 
 This is just like jQuery's `$('element#id.class')` CSS selector. Actually, jQuery uses `querySelectorAll` under the hood so insubstantiating all of jQuery just as a wrapper for a native function like this is a huge waste. yeah, sure jQuery extends the selectors you can use.
