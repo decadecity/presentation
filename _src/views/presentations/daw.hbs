@@ -5,9 +5,492 @@ strap: "true"
 ---
 {{>intro}}
 
-<section>
-  {{glob '_src/views/slides/daw/what-is-agnostic.html' }}
-</section>
+        <section>
+          <section>
+            <h1>Building for the<br>Device Agnostic Web</h1>
+          </section>
+          <section>
+            <h1>What is <i>agnostic</i>?</h1>
+            <p class="fragment">
+              Not knowing.
+            </p>
+            <aside class="notes" data-markdown>
+              Building for the device agnostic web.  That's a fancy title.  So what is "agnostic"?
+
+              >>>>
+
+              It means "not knowing".
+            </aside>
+          </section>
+          <section>
+            <h1>What is the <i>device agnostic web</i>?</h1>
+            <p class="fragment">
+              Not knowing what device will be used to interact with our site.
+            </p>
+            <aside class="notes" data-markdown>
+              So what is the "device agnostic web"?
+
+              >>>>
+
+              It means we don't know what device will be used to interact with our site.
+            </aside>
+          </section>
+          <section>
+            <h1>Isn't that just <i>The Web</i>?</h1>
+            <p class="fragment">
+              Sadly not...<br>
+              <img src="assets/img/daw/wtfmobileweb.png"/>
+            </p>
+            <aside class="notes" data-markdown>
+              But isn't that just "The Web", right?
+
+              >>>>
+
+              Err, no.  There are plenty of people out there who try to control which browsers interact with their sites.
+            </aside>
+          </section>
+          <section>
+            <h1>How bad is the problem?</h1>
+            <p>
+              <blockquote>"45% of the Fortune 100 target smartphone users with dedicated mobile sites today, yet none of the companies studied fully comply with Google's mobile site requirements."</blockquote>
+              <br><small><a href="http://www.prweb.com/releases/PureOxygenLabs/MobileSEOAssessment/prweb10866624.htm">http://www.prweb.com/releases/PureOxygenLabs/MobileSEOAssessment/prweb10866624.htm</a> <span class="light">2013-06-25</span></small>
+            </p>
+            <aside class="notes" data-markdown>
+              So how bad is this problem?
+
+              Nearly half of the top 100 American companies are trying this and none of them are getting it right as judged by Google's mobile site requirement.  These guidelines aren't exactly rocket surgery - they basically say "don't break the web" and yet people still can't manage it.
+            </aside>
+          </section>
+          <section>
+            <h1>It's not just mobile phones</h1>
+            <ul>
+              <li>Tablets</li>
+              <li>Games consoles</li>
+              <li>Televisions</li>
+              <li>Screen readers</li>
+              <li>Search engine spiders</li>
+              <li>The future: ???</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              This problem is probably highest profile with mobile phones but there are an awful lot of things out there that are interacting with web sites.
+
+              We've got tablets, games consoles, smart televisions, screen readers, search engine spiders - and they vary greatly in capabilities.
+
+              We're in the present - we're trapped between the past and the future.
+
+              We need to build sites that will work in browsers from the past and browsers from the future.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>How do we deal with not knowing what device is going to be interacting with our site?</h1>
+            <p class="fragment">Progressive enhancement.</p>
+            <aside class="notes" data-markdown>
+              This might sound pretty daunting - how do we deal with this?
+
+              >>>>
+
+              Progressive enhancement.
+            </aside>
+          </section>
+          <section>
+            <h1>What is progressive enhancement?</h1>
+            <p class="fragment">
+              Start with a solid foundation and enhance using the capabilities available.
+            </p>
+            <aside class="notes" data-markdown>
+              So what is progressive enhancement?
+
+              >>>>
+
+              We start with a solid foundation and then we enhance using the capabilities available.
+            </aside>
+          </section>
+          <section>
+            <h1>Elements of a web page</h1>
+            <ol>
+              <li>HTML(Content)</li>
+              <li>CSS (Presentation)</li>
+              <li>JavaScript (Behaviour)</li>
+            </ol>
+            <aside class="notes" data-markdown>
+              The traditional view of progressive enhancement is that you start with the HTML for the content, add CSS for the presentation and finally add on JavaScript for the behaviour.
+
+              This separation of concerns should, of course, be the the foundation for any site but we can do more:  We can also apply progressive enhancement **within** each of these elements.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>HTML</h1>
+            <ul>
+              <li>Clean</li>
+              <li>Semantic</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              The core attributes of our HTML are that it should be clean and semantic.  Getting this right gives us the best chance of it working everywhere.
+
+              Let's look at these attributes in a bit more detail.
+            </aside>
+          </section>
+          <section>
+            <h1>Clean</h1>
+            <ul>
+              <li>Correctly nest tags</li>
+              <li>Close <em>all</em> tags (e.g. <code>&lt;br/&gt;</code>)</li>
+              <li>Quote attributes</li>
+              <li>Well formed XML</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              Previously I would have said 'valid' rather than 'clean' here, however, HTML 5's validation rules are lax enough that it's not much use as a guide for where we need to be.
+
+              What we're looking for is robust markup that's not going to cause problems for any browser's parser.
+
+              An advantage of HTML5 is that progressive enhancement is built it - browsers will ignore things they don't understand.  This means that, providing we get the basics right, we can safely use more modern markup as long as we don't rely on it.
+
+              Correctly nesting tags should be something you are doing anyway - whilst you might be able to get away with overlapping tags in some browsers, you don't know how reliably an unknown browser will react.
+
+              Close all tags - even those you don't strictly have to like line breaks, meta tags and other singleton tags.  Yes, you can get away with not doing it but if you do it you don't have to "get away with it" - it's just going to work.
+
+              The same goes for quoting attributes - if you quote them, it's going to work.
+
+              What we're building up to here is that your HTML should be well formed XML.  Now that probably sounds like overkill especially as nobody really likes XML that much.
+
+              The point here is that if it's well formed XML then the browser's parser doesn't have to guess about anything when it's building the DOM tree, you're not going to be caught out by how an unknown browser handles HTML it doesn't fully understand.
+            </aside>
+          </section>
+          <section>
+            <h1>Semantic</h1>
+            <ul>
+              <li>Headings</li>
+              <li>Paragraphs</li>
+              <li>Lists</li>
+              <li>Anchors</li>
+              <li>New HTML5 elements</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              I'm not going to get into the details of exactly what element should be used to markup what content, that would take forever and everyone would disagree with me and everyone would be right.
+
+              However, headings, paragraphs, lists and anchors have been around since the start of HTML.  If you make sure your content is correctly marked up using these then it really should work in any browser ever made.
+
+              The new HTML5 elements - and in particular the sectioning elements such as header, footer and the like - are fine to use but don't rely on them.  The definitions aren't all stable and I'm not sure if there's really much out there that actually uses them.
+
+              The other thing to bear in mind is that older browsers - and not just IE - might not recognise them.  My recommendation is to put them in to mark sections but then put divs inside them to actually hang styles and functionality from.
+
+              When you've finished with the HTML, and before you add any styling, your content should be readable.  This is how text only browsers and search engines will see your site.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>CSS</h1>
+            <ul>
+              <li>Baseline presentation</li>
+              <li>Media queries</li>
+              <li>Interaction optimisations</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              Like HTML, CSS has progressive enhancement built in - browsers will ignore things they don't understand.  Again, providing we get the basics right, we can use advanced features provided we don't rely on them.
+            </aside>
+          </section>
+          <section>
+            <h1>Baseline presentation</h1>
+            <ul>
+              <li>Colours, typography, backgrounds, borders, etc.</li>
+              <li>Linear layout - no floats.</li>
+              <li>Basic interactions - no hover.</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              Your baseline presentation is the core elements of the CSS.  It should contain the basic style elements of your site such as the colours, typography, backgrounds, borders and the like.
+
+              The baseline layout should be completely linear with everything 100% width.  Don't use any floats at this stage as some legacy browsers don't handle floats and other layout styles very reliably.
+
+              Don't add any interaction enhancements at this point - specifically no hovers.
+
+              The site's not going to look very inspiring at this point, it's just one long list of branded content - not much different to the unstyled HTML.  However, this is exactly what we want - it's a baseline presentation that any browser with CSS support will be able to handle.
+            </aside>
+          </section>
+          <section>
+            <h1>Media Queries (Responsive Design)</h1>
+            <ul>
+              <li>Layout solution</li>
+              <li>Media query support: <code>@media only all</code></li>
+              <li>Not just width</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              It's important to remember that media queries and responsive design are not a silver bullet to cross device compatibility.  They are a layout solution.
+
+              We can detect for media query support with `@media only all`.
+
+              This is essentially our "cutting the mustard" test for good CSS support so, as we have a reliable baseline, we can start applying layout CSS and be fairly confident that it will be supported.
+
+              Don't forget that there are more media queries than just width.  For example height can be very useful to compress vertical whitespace for small screens in landscape orientation - such as Google Glass.
+            </aside>
+          </section>
+          <section>
+            <h1>Interaction optimisations</h1>
+            <ol>
+              <li>Sequential (keyboard)</li>
+              <li>Direct (touch)</li>
+              <li>Location aware (hover)</li>
+              <li>Ambient / Passive (sensors)</li>
+             </ol>
+             <aside class="notes" data-markdown>
+               There is a hierarchy of interactions.  Sequential navigation where you move from one item to the next in sequence is the baseline, this is normally keyboard navigation but that also includes things like game controllers.  The key to sequential interaction is keeping the user informed of where the current focus of interaction is.
+
+               Direct interaction uses the same interaction points as sequential but in this case they will be activated in isolation.  This is exemplified by touch interactions and is probably the easiest and mode of interaction to deal with.
+
+               Location aware interactions know where the point of interaction is before it is activated.  The mouse is the main example of this and it allows us to use hover states.  However, as this is further up the hierarchy you can't use this to present information not availble to sequential and direct interactions.
+
+               At the bottom of the hierarchy we have ambient or passive interactions such as information from sensors such as location and network.  This is still a very new area and should be used with caution as they don't express a concious desire for interaction.
+             </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>JavaScript</h1>
+            <ul>
+              <li>No JavaScript</li>
+              <li>Feature detection</li>
+              <li>Cutting the mustard</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              Whilst JavaScript used to be used to provide small dynamic enhancements it's increasingly used to provide core functionality.  Unlike HTML and CSS, JavaScript is not fault tolerant.  If you include something in JavaScript that the browser does not understand it will come to a stop.  This means we need more robust techniques for enhancement.
+            </aside>
+          </section>
+          <section>
+            <h1>No JavaScript</h1>
+            <ul>
+              <li>Core content and functionality is accessible</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              Whilst it's easy to assume that JavaScript is everywhere these days, JavaScript support varies significantly between browsers and, as we did with HTML and CSS, we're going to be starting with a safe baseline and enhancing.  With JavaScript the safest baseline is when it's not present.
+
+              You don't have to have all your functionality replicated without using JavaScript - that's not practical - but your core content and any functionality required to access that should be available.
+
+              What you should be aiming for is being able to complete the basics - for example adding a product to a shopping cart and then checking out. This is going to be a lot more clunky than with JavaScript enabled and there's no reason to spend too much time optimising this.  Now, when (not if) when JavaScript breaks or otherwise isn't available, your users are still able to use your site.
+            </aside>
+          </section>
+          <section>
+            <h1>Feature Detection</h1>
+            <ul>
+              <li>Enhance functionality using feature if present</li>
+              <li>Polyfill missing feature</li>
+              <li>Fall back on non JavaScript functionality</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              Whilst browsers will ignore HTML or CSS they don't recognise, if you try to use JavaScript they don't recognise they'll throw an error.  To avoid this we need to detect if a feature is supported before using it.
+
+              The basic formulation for feature detection is to check for the presence of the feature in it's container - frequently `document` or `window`.  There are exceptions and it's different for HTML features but the idea is the same - you are detecting whether the feature you want to use is supported in the browser
+
+              If you know the feature is supported you can then enhance using that feature.  If the feature isn't supported then you can either pollyfill to emulate the missing feature or fall back to the non JavaScript functionality.
+
+              A pollyfill refers to using JavaScript to replicate missing browser functionality so you don't have to deal with it not being there.  Pollyfilling functionality is tempting so it's very easy to end up with a lot of code doing this.  This code can be hard to maintain and test so for each pollyfill you should thoroughly examine if the feature you want to use really is important enough to warrant that investment of time.
+
+              So if we're not pollyfilling this missing JavaScript functionality what are we going to do?  Because we have started with a baseline that  core functionality is available without JavaScript we don't have to do anything - the core functionality is still available.
+            </aside>
+          </section>
+          <section>
+            <h1>Cutting the mustard</h1>
+            <ul>
+              <li>Feature detect a minimum level of support for enhancements</li>
+              <li>Only request JavaScript when supported</li>
+              <li>Fall back on non JavaScript functionality</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              "Cutting the mustard" is a term coined by the BBC responsive team.  The principle here is that you feature detect for a set of minimum requirements and only request and load the JavaScript when these requirements are met.  This has two advantages:
+
+               * We can use more advanced JavaScript features knowing that they will be supported.
+               * Devices that won't run our JavaScript won't even waste time downloading it.
+
+              This is a really useful technique for dealing with older browsers that have limited JavaScript support, it means you're not having to deal with a lot of compatibility problems and, because your core functionality works without JavaScript, users of these older browsers aren't missing out.
+            </aside>
+          </section>
+          <section>
+            <h1>Non JavaScript functionality</h1>
+            <p>More than just JavaScript disabled</p>
+            <aside class="notes" data-markdown>
+              The common perception of providing non JavaScript functionality is that it's for people who have JavaScript disabled in their browsers and there aren't many of them so why bother?
+
+              As we've seen, having your core functionality available without JavaScript is important for more practical reasons:  It enables your users to continue to use your site when something is broken, or missing either by accident or design.
+
+              Paradoxically, by providing support when JavaScript isn't present it allows you to provide better support when it is present.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Accessibility</h1>
+            <p>Accessible to everyone, not just the disabled</p>
+            <aside class="notes" data-markdown>
+              People often think of accessibility as being for the disabled but, done right, it will make your site more accessible for all your users regardless of ability, device and conditions.
+
+              Accessibility can seem daunting but if you get the basics right throughout the process then it doesn't have to be a big thing.  Accessibility only really becomes a problem when you try and retro-fit it to a project at the end.
+
+              I'm going to split accessibility into structure and presentation.
+            </aside>
+          </section>
+          <section>
+            <h1>Accessibility (structure)</h1>
+            <ul>
+              <li>Image <code>alt</code> attributes</li>
+              <li>Form labels</li>
+              <li>Tab index</li>
+              <li>ARIA roles</li>
+            </ul>
+            <aside class="notes" data-markdown>
+              We've already covered semantic HTML and that's a great foundation for accessibility but there are a few more things that, if you get them right in your markup, will enhance your site's usability for all users - not just those that rely on assistive technology.
+
+               * Images must have an alt attribute, even if that is null.
+               * Form inputs must have labels.  Some controls - like buttons - are implicity labelled but text boxes, radio buttons, checkboxes and the like need labels.
+               * Use the tabindex attribute to make sure that all your controls are accessible by keyboard navigation in a logical fashion. We'll come on to keyboard navigation later but it's not just for keyboards - the D-pad on game console controllers is normally mapped to this.  You can actually do quite a bit with the tabindex attribute so I suggest you look at the documentation.
+               * ARIA roles have the promise to give a significant boost to assistive technologies but unfortunately it seems support for them in assistive technologies is slow in arriving.  It's definitely worth finding out about them and putting them into your code but don't rely on them.
+            </aside>
+          </section>
+          <section>
+            <h1>Accessibility (presentation)</h1>
+            <ul>
+              <li>Contrast - 4.5:1</li>
+              <li>Focus highlight</li>
+              <li>Fixed dimensions in <code>em</code></li>
+            </ul>
+            <aside class="notes" data-markdown>
+              As with HTML, accessibility in CSS isn't just for disabled users.  An accessible site will be easier for all users to use.
+
+              Designers:  If you only remember one thing from this talk then remember this:  **The minimum accessible contrast ratio between foreground and background is 4.5:1**.
+
+              Don't think of this as a restriction, treat it as a challenge.  The best designers I've worked with have come up with some really creative solutions that are right on this limit.  And don't forget:  this contrast isn't just for blind people, it will make your site easy to read on monochrome screens, small screens, screens in sunlight, screens viewed at an angle - in fact most situations that aren't the nice big screen in ideal lighting you use to do your design work.
+
+              Set a prominent focus highlight.  This is essential for keyboard navigation.  This doesn't look the best for mouse and touchscreen navigation but you can use JavaScript to remove this until you detect keyboard input - the important thing is to have a prominent highlight by default.
+
+              Don't use pixels for fixed dimensions - use ems.  This allows users to change the base or minimum font sizes and your site won't fall apart.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Performance</h1>
+            <ol>
+              <li>Set a performance budget</li>
+              <li>Use objective measurements (<em>not</em> times)</li>
+              <li>Defer non-essential items (e.g. analytics)</li>
+              <li>Validate using real user monitoring (RUM)</li>
+            </ol>
+            <aside class="notes" data-markdown>
+              There are plenty of studies that show that the faster your site is the more people will engage with it.  Speed is also a factor in Google rankings and, thanks to a server configuration issue, I've seen that in action.
+
+              You should set a performance budget for your site to prevent it getting too slow as you add more without taking anything away.  Sticking to a budget means that when you want to add something new you have to take something out and that forces you to think about how much value the new feature really adds.
+
+              Whilst it's tempting to think of your budget in terms of time - after all that's what performance is all about - it's not practical to accurately measure time when you are building a site.  You need to define your budget in objective measurements that contribute the page speed.  The key metrics you should be focusing on are:
+
+               * Number of HTTP requests
+               * Total page weight
+               * Percentage of visual rendering complete (https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index)
+
+              You can make some space in your budget by deferring non-essential items.  And by essential I mean essential to your users.  Analytics is a classic example of this - whilst you might conciser them essential, your users don't care.  When was the last time you saw a slow website and thought: "I'm happy to wait for this if it means they get good analytics."
+
+              Whilst I did say don't set your budget using a time measurement, it's a good idea to measure how fast pages are actually loading for your users - this is known as real user monitoring.  With enough data you can get a meaningful average and you can use this to ensure that changes you make to the site aren't having a negative effect on your users' load times.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Testing</h1>
+            <ul>
+              <li>Test using real devices</li>
+              <li>Focus your testing</li>
+              <li>Device Lab<!-- (<a href="http://devicelab.org">devicelab.org</a>)--></li>
+            </ul>
+            <aside class="notes" data-markdown>
+              Building sites this way may sound like you have to do more testing, in fact it should reduce the amount of testing but you should be testing in multiple devices anyway and, if you build it right, more things should just work.
+
+              Emulators are OK but there's no substitute for testing using real devices.  There's nothing quite like an entry level smart phone to highlight issues with performance and usability that you'll will be covered up by a top of the range device.
+
+              You should focus your testing.  There's not really much to be gained by doing a full regression on every device and in every browser.  You should think about what could cause a problem and focus on those areas in browsers you know will expose that.
+
+              In Edinburgh we've got a device lab where you can go to test on over 50 devices.  I don't know if there's one in York but you should think about setting one up, they are a great resource.
+
+              <!--In Edinburgh we have a world class facility in the Device Lab and I recommend you go book some time for testing - they've got everything set up including a number of tools that make testing on a multiple devices much quicker and easier.
+
+              I'd also suggest booking some time to do some research, take your team down there and have a look at your site, your competitors' sites and other sites from outside your industry.  Look at what's working and what's not and use that to inform which direction you take your site.-->
+            </aside>
+          </section>
+        </section>
+        <section>
+          <div class="ff-bg">
+            <img src="assets/img/daw/future-friendly.svg" alt=""/>
+          </div>
+          <div class="ff-atrib"><small>Image credit: <a href="http://futurefriendlyweb.com/">http://futurefriendlyweb.com/</a></small></div>
+          <section>
+            <h1>The future</h1>
+            <p>What's going to happen in the future?</p>
+            <p>Learn from the past.</p>
+            <aside class="notes" data-markdown>
+              Code you wrote in the past is now living in the future.  Look at how that's working in new browsers.
+
+               * What did you do that worked?  Do more of that!
+               * What did you do that broke?  Don't do that again.
+
+              Browsers are very good at dealing with old websites, if you've built your site to be compatible with older browsers then it's a safe bet that new browsers will be able to handle it.
+            </aside>
+          </section>
+          <section>
+            <h1>Be general, not specific</h1>
+            <div class="fragment">
+              <p>
+                <blockquote>
+                  <p>First thought: "Damn! New rendering engines."</p>
+                  <p>Second thought: "I already build device agnostic websites - what do I care?"</p>
+                </blockquote>
+                <br/>
+                <small><a href="https://twitter.com/decadecity/status/319584869191651328">https://twitter.com/decadecity/status/319584869191651328</a></small>
+              </p>
+            </div>
+            <aside class="notes" data-markdown>
+              The more general you make your code the less likely it is to cause you problems.  If your code targets specific browsers then when those browsers change you have to change your code in order to prevent it breaking.
+
+              When Google announced Blink and Mozilla announced their Servo rendering engines on the same day this was my reaction:
+
+              >>>>
+
+              If you have to change your site when Apple release a new version of one of their products: **you are doing it wrong**.
+            </aside>
+          </section>
+          <section>
+            <h1>Give up control</h1>
+            <div class="fragment">
+              <p class="lightweight">(You never had it anyway)</p>
+            </div>
+            <aside class="notes" data-markdown>
+              One of the keys to building in a device agnostic manner is to give up control.
+
+              >>>>
+
+              You never really had it anyway - you just thought you did.
+
+              Whether trying to deliver the same pixel perfect site to every user or delivering reduced functionality to mobile users 'on the go', trying to exert a control we don't have over how our sites are viewed is fighting a losing battle.
+
+              I know it can seem a bit scary but once you accept that you don't have control over how your users interact with your site it's actually very liberating - you've got no choice but to get the fundamentals right and, once they're right, you have a lot more freedom with how you build up from there.
+            </aside>
+          </section>
+          <section>
+            <h1>Future Friendly</h1>
+            <p class="ff-link"><a href="http://futurefriendlyweb.com/">http://futurefriendlyweb.com/</a></p>
+            <ol>
+              <li>Acknowledge and embrace unpredictability.</li>
+              <li>Think and behave in a future-friendly way.</li>
+              <li>Help others do the same.</li>
+            </ol>
+            <aside class="notes" data-markdown>
+              Future Friendly is a philosophy that emerged as a positive reaction to the increasing varieties of devices that can be connected in the web.
+
+              It acknowledges that the only predictable thing about the future of the web is that it will be unpredictable.
+
+              By building in a device agnostic manner we embrace this unpredictability and put ourselves in the best possible position for the future.
+            </aside>
+          </section>
+        </section>
 
 
 {{>outro}}
