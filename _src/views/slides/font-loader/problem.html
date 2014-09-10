@@ -1,0 +1,14 @@
+<section>
+  <h1>What's the problem?</h1>
+  <p><img src="assets/img/font-loader/medium-fail.png" alt="LOSE"/></p>
+
+<aside class="notes" data-markdown>
+  Web browsers operate in a fundamentally hostile environment, network requests can take time over slow connections (such as mobile networks) and it's not out of the ordinary for them to fail (such as a mobile network losing signal).  If you are using custom fonts on your pages then the font has to be loaded over the network before it can be used so, until the font has loaded, the browser cannot display text in the custom font.
+
+  Showing text in a font that is available (such as a system font) before applying the custom font to the text when it has finished loading is known as a flash of unstyled text (FOUT).  To avoid this FOUT (most) browsers do something that, to my mind, is much worse - they don't show any of the text that is to have the custom font applied to it.  This essentially means that before your font loads your page will have none of the content destined to have the custom font - it's effectively unavailable.
+
+  The details of how browsers handle this situation vary: Internet Explorer will show the fall-back font immediately and then apply the custom font when it loads.  Firefox won't display any content for the first few seconds, if the custom font hasn't loaded at that point it will show the system font.  The worst offenders are WebKit based browsers (including Blink at this point) which will seemingly wait forever for the custom font to load and won't show any of the content destined to have the custom font until it loads (if it ever does).
+
+  To sum up, when (not if) there is a problem loading the font then your content won't be available.  Not only that but, even if all goes well, there is a good chance that your page will show without visible content for a period of time before the font loads.  We have potential issues with both fault tolerance and performance.
+</aside>
+</section>

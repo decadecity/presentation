@@ -1,12 +1,13 @@
 ---
 title: "Presentations"
 theme: "decadecity"
-strap: "true"
+strap: true
+ignore: true
 ---
 <section>
   <ul>
-    {{#each presentations}}
-    <li><a href="{{file}}">{{title}}</a></li>
-    {{/each}}
+    {{#each pages}}{{#unless this.data.ignore}}
+    <li><a href="{{this.relativeLink}}">{{replace this.data.title '<br/>' ' '}}</a></li>
+    {{/unless}}{{/each}}
   </ul>
 </section>
