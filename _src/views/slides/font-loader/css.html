@@ -7,4 +7,13 @@
 .wf-customfont-n4-active body {
   font-family: 'Custom-Font', Fall-back, font, stack;
 }</code></pre></p>
+
+<aside class="notes" data-markdown>
+Now we have the class hooks we can use them to define our fonts.
+
+Firstly we define our fall back font stack which uses system fonts.  This is what the browser is going to use until the font loader has registered that the custom font has loaded.
+
+Then we use the class hook to override the font stack with one that starts with our custom font.  So now, when the font has loaded, the system fonts will be swapped out for the custom fonts.
+</aside>
 </section>
+

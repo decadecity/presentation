@@ -11,4 +11,10 @@
   letter-spacing: normal;
 }</code></pre>
 </p>
+
+<aside class="notes" data-markdown>
+One common problem you'll get when you use a font loader is that the custom fonts will be a different size to the system fonts.  If this is the case the same amount of text will take up a different amount of space so when the fonts are switched over you'll get some layout reflow.
+
+To counter this you can use the class hook to adjust the size and spacing of the system fonts to match the custom font.  This way the text will take up the same amount of space and you won't get layout reflows.
+</aside>
 </section>

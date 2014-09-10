@@ -2,8 +2,13 @@
   <h1>Linking the CSS to the JavaScript</h1>
   <div>
     <h2>CSS</h2>
-    <p><pre class="code">font-family: <strong><span class="hljs-string">'Custom-Font'</span></strong>;</pre></p>
+    <div><div class="code__caption"><img src="assets/img/file.svg" class="code__caption__icon"/>fonts.css</div><pre class="code">font-family: <strong><span class="hljs-string">'Custom-Font'</span></strong>;</pre></div>
     <h2>JavaScript</h2>
-    <p><pre class="code">families: [<strong><span class="hljs-string">'Custom-Font'</span></strong>]</pre></p>
+    <div><div class="code__caption"><img src="assets/img/file.svg" class="code__caption__icon"/>webfont.js</div><pre class="code">families: [<strong><span class="hljs-string">'Custom-Font'</span></strong>]</pre></div>
   </div>
+<aside class="notes" data-markdown>
+Now this bit is the magic spell we use to get the CSS and the JavaScript working together.
+
+We need to match these two strings.  This is how the web font loader knows which fonts to manage.  Any custom font families you have declared in the CSS need to be added to this array in the loader.
+</aside>
 </section>
