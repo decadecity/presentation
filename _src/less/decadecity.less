@@ -137,7 +137,7 @@ body {
   }
   h1 {
     font-size: 1.5em; /* 24px */
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     margin-top: 1em;
     &.title {
       font-weight: bold;
@@ -145,17 +145,17 @@ body {
   }
   h2 {
     font-size: 1.375em; /* 22px */
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     margin-top: 1.0909em;
   }
   h3 {
     font-size: 1.25em; /* 20px */
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     margin-top: 1.2em;
   }
   h4 {
     font-size: 1.125em; /* 18px */
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     margin-top: 1.3333em;
   }
   .highlight {
@@ -167,6 +167,12 @@ body {
   }
 
   // Boxes
+  blockquote {
+    font-family: serif;
+    font-style: normal;
+    line-height: 1.5;
+  }
+
   pre, blockquote {
     overflow: auto;
     border: 0.125em solid #888;
@@ -178,6 +184,13 @@ body {
   blockquote p {
     margin-top: 0;
     margin-bottom: 0.5em;
+  }
+
+  pre code {
+    padding: 0;
+    font-family: Ubuntu Mono, monospace;
+    font-size: 1.75em;
+    line-height: 1;
   }
 
   // Override.
@@ -194,6 +207,11 @@ body {
     a {
       text-decoration: none;
     }
+  }
+
+  .intro .spacer {
+    width: 3em;
+    display: inline-block;
   }
 
   .name {
@@ -244,6 +262,10 @@ body {
 
 } //.reveal
 
+.unbulleted {
+  list-style-type: none;
+}
+
 ::selection {
   color: white;
   background: #ff5e99;
@@ -259,7 +281,7 @@ body {
 }
 
 .err {
-  color: red;
+  color: #d72756;
 }
 
 // Monty python image.
@@ -390,6 +412,10 @@ body {
   }
 }
 
+@import '_source-compare';
+@import '_table';
+@import '_definitions';
+
 
 /* Decade City style code highlighting */
 .hljs{color:#1e163d}.hljs-comment,.hljs-template_comment,.diff .hljs-header,.hljs-javadoc{color:#666;font-style:italic}.hljs-keyword,.css .rule .hljs-keyword,.hljs-winutils,.javascript .hljs-title,.nginx .hljs-title,.hljs-subst,.hljs-request,.hljs-status{color:#1e163d;font-weight:bold}.hljs-number,.hljs-hexcolor,.ruby .hljs-constant{color:#48778a}.hljs-string,.hljs-tag .hljs-value,.hljs-phpdoc,.tex .hljs-formula{color:#d72756}.hljs-title,.hljs-id,.coffeescript .hljs-params,.scss .hljs-preprocessor{color:#6b5ea6;font-weight:bold}.javascript .hljs-title,.lisp .hljs-title,.clojure .hljs-title,.hljs-subst{font-weight:normal}.hljs-class .hljs-title,.haskell .hljs-type,.vhdl .hljs-literal,.tex .hljs-command{color:#6b5ea6;font-weight:bold}.hljs-tag,.hljs-tag .hljs-title,.hljs-rules .hljs-property,.django .hljs-tag .hljs-keyword{color:#6b5ea6;font-weight:normal}.hljs-attribute,.hljs-variable,.lisp .hljs-body{color:#2a58e4}.hljs-regexp{color:#009926}.hljs-symbol,.ruby .hljs-symbol .hljs-string,.lisp .hljs-keyword,.tex .hljs-special,.hljs-prompt{color:#990073}.hljs-built_in,.lisp .hljs-title,.clojure .hljs-built_in{color:#745cdc}.hljs-preprocessor,.hljs-pragma,.hljs-pi,.hljs-doctype,.hljs-shebang,.hljs-cdata{color:#6b5ea6;font-weight:bold}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.diff .hljs-change{background:#0086b3}.hljs-chunk{color:#aaa}
@@ -411,7 +437,6 @@ body {
   text-decoration: none !important;
 }
 
-
 // Old code highlighting
 .com{color:#777; font-style:italic;}
 .kwd{color:#080;font-weight:bold;}
@@ -422,3 +447,14 @@ body {
 .tag{color:#006;}
 .typ,.atn,.dec{color:#600;}
 .err{color:#F00;}
+
+// Overrides
+#css {
+  h1.title {
+    margin-top: 0.25em;
+    p {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+  }
+}

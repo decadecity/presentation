@@ -1,0 +1,23 @@
+<section>
+  <h1>Specificity</h1>
+  <pre class="code"><code>.error {
+  color: red;
+}
+
+#login-form .error {
+  color: orange;
+}</code></pre>
+
+
+  <aside class="notes" data-markdown>
+It turns out there's an ID of `login-form` wrapping the fields so we can use that to target just the errors in that form:
+
+What's happening here is that the second declaration uses a more specific selector so any error contained within that form will be `orange` whilst the rest will remain `red`.  Job done.
+
+At this point it must be 5 o'clock somewhere in the world so we stick a fork in it and have a desk beer.
+  </aside>
+</section>
+
+
+
+

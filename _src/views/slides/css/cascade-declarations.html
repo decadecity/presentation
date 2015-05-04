@@ -1,0 +1,27 @@
+<section>
+  <h1>Declaration Cascade</h1>
+
+<div class="source-compare">
+  <div class="source-compare__item source-compare__item--first">
+<pre class="code"><code>.class {
+  margin: 1em;
+  margin-top: 0em;
+}</code></pre>
+  </div>
+  <div class="source-compare__item source-compare__item--operator">
+!=
+  </div>
+  <div class="source-compare__item source-compare__item--second">
+<pre class="code"><code data-noescape>.class {
+  <strike>margin-top: 0em;</strike>
+  margin: 1em;
+}</code></pre>
+  </div>
+</div>
+
+  <aside class="notes" data-markdown>
+The cascade doesn't just apply to rules, it applies to declarations within rules as well.  We can see in these examples that in the second example the `margin-top` property won't take effect as it's being overridden by the `margin` property below it.
+
+This is easier to manage than the rules cascade, especially if we're keeping the number of declarations in our rules to a minimum.  However, we can help ourselves out by choosing a convention for ordering our rules.  What we want to avoid is using an arbitrary sort order - such as alphabetical - or just stuffing declarations in at the end of the rule as we go alone.
+  </aside>
+</section>

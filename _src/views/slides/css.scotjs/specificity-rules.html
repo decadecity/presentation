@@ -1,0 +1,40 @@
+<section>
+  <h1>Specificity calculation</h1>
+  <p class="fragment fade-out" data-fragment-index="1" data-dc-remove="true"><code>[W,X,Y,Z]</code></p>
+
+    <table class="fragment fade-in" data-fragment-index="1">
+      <thead>
+        <tr><th>Selector component</th><th>Specificity</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>*</code></td><td class="table-cell--numeric">[<span class="light">0</span>,<span class="light">0</span>,<span class="light">0</span>,<span class="light">0</span>]</td></tr>
+        <tr><td>element</td><td class="table-cell--numeric">[<span class="light">0</span>,<span class="light">0</span>,<span class="light">0</span>,1]</td></tr>
+        <tr><td>class</td><td class="table-cell--numeric">[<span class="light">0</span>,<span class="light">0</span>,1,<span class="light">0</span>]</td></tr>
+        <tr><td>ID</td><td class="table-cell--numeric">[<span class="light">0</span>,1,<span class="light">0</span>,<span class="light">0</span>]</td></tr>
+        <tr><td>inline</td><td class="table-cell--numeric">[1,<span class="light">0</span>,<span class="light">0</span>,<span class="light">0</span>]</td></tr>
+      </tbody>
+    </table>
+
+    <pre class="code fragment" data-fragment-index="2"><code class="nohighlight" data-noescape>.class #id        =&gt; [<span class="light">0</span>,<span class="err">1</span>,1,0]
+.class .class     =&gt; [<span class="light">0</span>,<span class="light">0</span>,<span class="err">2</span>,0]</code></pre>
+
+  <aside class="notes" data-markdown>
+Working out the specificity of a selector can get a bit confusing but is actually logical.  The specificity of a selector is expressed in a four item matrix and the highest specificity in the lowest index wins.
+
+>>>>
+
+To build the matrix you break the selector down into its component parts and add them up. Looking at the table here we can see the specificity for each component.
+
+ 1. The global selector (<code>*</code>) has no specificity - which makes sense, it's not specific: it applies to everything.
+ 2. Elements are the least specific, they are in the final column.
+ 3. Next up are classes.
+ 4. Followed by IDs.
+ 5. And finally we have inline styles.
+
+Here's an example of how to apply this:
+
+>>>>
+
+In the first one the single ID in the second slot trumps the two classes in the third slot in the second one.
+  </aside>
+</section>

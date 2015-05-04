@@ -1,0 +1,27 @@
+<section>
+  <h1><code>!important</code></h1>
+  <pre class="code"><code data-noescape>.error {
+  color: red;
+}
+.email .error {
+  color: blue<span class="fragment fade-out" data-fragment-index="1">;</span><strong class="fragment fade-in" data-fragment-index="1">!important;</strong>
+}
+#login-form .error {
+  color: orange;
+}</code></pre>
+
+
+  <aside class="notes" data-markdown>
+We can't up the specificity of the email field selector so we'll add an `!important` annotation:
+
+>>>>
+
+The way `!important` works is by resetting the cascade.  Effectively there's now a second cascade of declarations that have the `!important` annotation so here the `.email .error` colour will now trump the higher specificity selector for the login form because that doesn't have an `!important` annotation.
+  </aside>
+</section>
+
+
+
+
+
+

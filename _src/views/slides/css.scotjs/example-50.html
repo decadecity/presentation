@@ -1,0 +1,34 @@
+<section>
+  <h1>Single name space</h1>
+  <pre class="code"><code data-noescape>.error {
+  color: red;
+}
+<span class="fragment" data-fragment-index="1">.email .error {
+  color: blue<span class="fragment fade-out" data-fragment-index="3">;</span><span class="fragment fade-in" data-fragment-index="3"><strong>!important</strong>;</span>
+}
+<span class="fragment" data-fragment-index="2">#login-form .error {
+  color: orange;
+}</span></span></code></pre>
+
+
+  <aside class="notes" data-markdown>
+We now get a request to change the colour of error messages for email fields to `blue`.
+
+Not a problem, there's already a class of `email` on the fields so we can just add an additional class to the selector and we're good:
+
+>>>>
+
+But unfortunately this selector has lower specificity than the one used to 'fix' the login form errors.  We can't up the specificity of the email field selector so we'll add an `!important` annotation:
+
+>>>>
+
+The way `!important` works is by resetting the cascade.  Effectively there's now a second cascade of declarations that have the `!important` annotation so here the `.email .error` colour will now trump the higher specificity selector for the login form because that doesn't have an `!important` annotation.
+  </aside>
+</section>
+
+
+
+
+
+
+

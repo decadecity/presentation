@@ -1,0 +1,20 @@
+<section>
+  <h1>Specificity graph</h1>
+  <p>
+    <img class="fragment fade-out" data-fragment-index="1" data-dc-remove="true" alt="Macro level specificity graph showing trend" src="assets/img/css/macro.svg">
+    <img class="fragment fade-in" data-fragment-index="1" alt="Micro level specificity graph showing variations" src="assets/img/css/micro.svg">
+  </p>
+
+  <aside class="notes" data-markdown>
+<!--<img alt="Macro level specificity graph showing trend" class="svg-replace" src="//s3-eu-west-1.amazonaws.com/decadecity/img/articles/specificity-graphs/macro.png">-->
+Specificity graphs are a technique for reasoning about your CSS.  By plotting specificity against source order we are effectively visualising the cascade and specificity at the same time.
+
+The key to the specificity graph is that it <em>trends</em> upwards.
+
+>>>>
+
+It's going to fluctuate in detail but the trend should be upwards.
+
+Structuring your CSS in such a way that the specificity increases as you go through the code won't necessarily change how it works but the important thing is that it's easier to understand the intention of the code and it makes it easier to maintain as you can see <em>where</em> to place rules in your code.  What we're really trying to avoid here is just adding new CSS onto the bottom each time as the code base grows because, as we've seen, that is a really good way to make your code hard to maintain.
+  </aside>
+</section>

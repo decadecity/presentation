@@ -27,8 +27,10 @@ module.exports = function(grunt) {
     },
 
     less: {
+      options: {
+        sourceMap: true
+      },
       themes: {
-        options: {},
         files: {
           'public_html/css/theme/decadecity.css': '_src/less/decadecity.less',
           'public_html/css/theme/fling.css': '_src/less/fling.less'
@@ -52,7 +54,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          {expand: true, flatten: false, cwd: '_src/js/', src: ['*.js'], dest: 'public_html/js/'},
+          {expand: true, flatten: false, cwd: '_src/js/', src: ['**'], dest: 'public_html/js/'},
         ]
       }
     },

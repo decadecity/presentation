@@ -1,0 +1,22 @@
+<section>
+  <h1>OOCSS example</h1>
+  <pre class="code"><code>&lt;div class="panel border"&gt;
+  &lt;div class="content"&gt;
+    &lt;p&gt;&hellip;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="img"&gt;
+    &lt;img src="&hellip;"/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  <pre class="code"><code data-noescape>.panel { margin: 1em; clear:both; }
+.panel .img { float:left; margin-right: 1em; }
+
+.border { border: 1px solid grey; }</code></pre>
+  <aside class="notes" data-markdown>
+Here's an example of an element that we're using on our site - it's box with some content, an image on the left and a border.
+
+We've split this out into a panel object that handles the layout and a border object that deals - surprisingly enough - with the border.  Here we've combined these two but we can use this layout object elsewhere and apply different visual styles to it and we can apply this border object to other objects.
+
+The key to OOCSS is to keep the objects small and re-usable.  You're probably not going to have that many objects defined but they're going to form the basic scaffolding of your visual presentations.
+  </aside>
+</section>
