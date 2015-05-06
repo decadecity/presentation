@@ -10,18 +10,14 @@
 The key principles of SMACSS are:
 
 ### Structured code.
-You should separate out your code into different areas of responsibility:
-
- * reset/base/typography
- * layout
- * modules
-
-Essentially we aren't mixing base styles and typography in with out layout and the presentation of individual modules of the UI.  This is basic separation of concerns: we want to know where we should be making changes and when we make those changes they're not going to have side effects.
+You should structure your code in a logical manner to minimise conflicts - don't just keep putting rules in at the bottom of the file.
 
 ### Depth of applicability
-If our CSS has too much depth of applicability then we can't re-use it elsewhere.  For example, if we have a presentation that is tied into being the sidebar or our site we can't re-use it in the content area without piling on more selectors and more specificity.
+If our CSS has too much depth of applicability then we can't re-use it.  If a presentation is tied to one area of our site then we can't reuse it elsewhere.
 
 ### Minimum specificity
-The easiest way to avoid specificity issues is to always strive to use the minimum practical specificity, which is typically "one class".  When we're putting things together we're always looking for ways to use one class as our selector.  Obviously that's not always going to be possible but, given the choice, it's better to have several "one class" selectors than one "several class" selector.
+The easiest way to avoid specificity issues is to always strive to use the minimum practical specificity, which is typically "one class".
+
+It's better to have several "**one class**" selectors rather than one "**several class**" selector.
   </aside>
 </section>

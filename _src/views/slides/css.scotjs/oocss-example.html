@@ -1,17 +1,44 @@
 <section>
   <h1>OOCSS example</h1>
-  <pre class="code"><code>&lt;div class="panel border"&gt;
+<div class="source-compare">
+  <div class="source-compare__item source-compare__item--first" style="width:60%;">
+<pre class="code"><code>&lt;div class="panel border"&gt;
   &lt;div class="content"&gt;
-    &lt;p&gt;&hellip;&lt;/p&gt;
+    &lt;p&gt;Lorem ipsum&hellip;&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="img"&gt;
-    &lt;img src="&hellip;"/&gt;
+    &lt;img src="edinburgh_js.png"/&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-  <pre class="code"><code data-noescape>.panel { margin: 1em; clear:both; }
+  </div>
+  <div class="source-compare__item source-compare__item--second" style="width:33%;margin-left:6%;">
+<style>
+.reveal .panel { margin: 0; margin-top: 0.5em; padding: 0.25em; clear:both; overflow: hidden; text-align: left; font-size: 0.75em;}
+.reveal .panel .content { width: 70%; float: right; }
+.reveal .panel p { margin: 0;}
+.reveal .panel .img { float:left; width: 25%; }
+.reveal .panel .img img { width: 100%; }
+
+.reveal .border { border: 0.125em solid #c0c0c0; }
+</style>
+
+<div class="panel border">
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="img">
+    <img src="/assets/img/css/edjs.png" alt="Edinburgh JS"/>
+  </div>
+</div>
+
+
+  </div>
+</div>
+  <pre class="code"><code data-noescape>.panel { padding: 1em; clear:both; }
+.panel .content { float: right; }
 .panel .img { float:left; margin-right: 1em; }
 
-.border { border: 1px solid grey; }</code></pre>
+.border { border: 1px solid gray; }</code></pre>
   <aside class="notes" data-markdown>
 Here's an example of an element that we're using on our site - it's box with some content, an image on the left and a border.
 
