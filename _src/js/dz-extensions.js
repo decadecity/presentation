@@ -1,20 +1,18 @@
-function setStrap(element) {
-  var strap = document.querySelector('#strap');
-  if (strap && element) {
-    if (element.dataset.dcStrap === "false") {
-      strap.classList.add('remove');
-    } else {
-      strap.classList.remove('remove');
-    }
+function setStrap(slide) {
+  var strap = $('#strap');
+  if (slide.data('dc-strap') === false) {
+    strap.addClass('remove');
+  } else {
+    strap.removeClass('remove');
   }
 }
 
-function setBackground(element) {
-  var html = document.querySelector('html');
-  if (element && element.classList.contains('invert')) {
-    html.classList.add('invert');
+function setBackground(slide) {
+  var html = $('html');
+  if (slide.length && slide.hasClass('invert')) {
+    html.addClass('invert');
   } else {
-    html.classList.remove('invert');
+    html.removeClass('invert');
   }
 }
 

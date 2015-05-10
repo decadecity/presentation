@@ -4,6 +4,7 @@
   <meta charset="utf8">
   <title>DZSlides</title>
   <script src="/js/markdown.js"></script>
+  <script src="/js/jquery.js"></script>
   <script src="/js/helpers.js"></script>
   <link href="/css/onstage.css" rel="stylesheet"/>
 </head>
@@ -19,7 +20,7 @@
   <div id="slideidx" onclick="Dz.setCursor(prompt('Go to slide...','1'));">?</div>
   <div id="nextslideidx">?</div>
 
-  <div id="notes">
+  <div id="notes" tabindex="-1">
     <p id="content"></p>
   </div>
 
