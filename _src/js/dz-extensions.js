@@ -33,3 +33,13 @@ function resize () {
 }
 resize();
 window.addEventListener('resize', resize);
+
+function fragmentRemove(event) {
+  var fragment = event.detail.fragment;
+  if(fragment.data('dc-remove') === true) {
+    fragment.toggleClass('removed');
+  }
+}
+
+document.addEventListener('FRAGMENT_SHOWN', fragmentRemove);
+document.addEventListener('FRAGMENT_HIDDEN', fragmentRemove);
