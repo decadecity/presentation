@@ -39,12 +39,10 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      reveal: {
+      dzslides: {
         files: [
-          {expand: true, flatten: true, cwd: 'lib/reveal.js/css/', src: ['*.css'], dest: 'public_html/css/'},
-          {expand: true, flatten: true, cwd: 'lib/reveal.js/js/', src: ['*.js'], dest: 'public_html/js/'},
-          {expand: true, flatten: false, cwd: 'lib/reveal.js/plugin/', src: ['**'], dest: 'public_html/plugin/'},
-          {expand: true, flatten: false, cwd: 'lib/reveal.js/lib/', src: ['**'], dest: 'public_html/lib/'},
+          {expand: true, flatten: true, cwd: 'lib/dzslides/css/', src: ['*.css'], dest: 'public_html/css/'},
+          {expand: true, flatten: true, cwd: 'lib/dzslides/js/', src: ['*.js'], dest: 'public_html/js/'},
         ]
       },
       assets: {
@@ -78,9 +76,9 @@ module.exports = function(grunt) {
         options: {
         }
       },
-      reveal: {
-        files: ['lib/reveal.js/**'],
-        tasks: ['copy:reveal'],
+      dzslides: {
+        files: ['lib/dzslides/**'],
+        tasks: ['copy:dzslides'],
         options: {
         }
       },

@@ -28,7 +28,27 @@
 
 body {
   background-color: @forground;
-  font-family: sans-serif;
+  font-family: sans, sans-serif;
+  border-radius: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+section {
+  text-align: center;
+  padding: 2em;
+}
+
+// Progress bar.
+#progress-bar {
+  background-color: @light-purple;
+  z-index: 2;
 }
 
 .reveal {
@@ -50,83 +70,11 @@ body {
   a:not(.image) {
     color: @light-purple;
     text-decoration: underline;
-    -webkit-transition: color .15s ease;
-    -moz-transition: color .15s ease;
-    -ms-transition: color .15s ease;
-    -o-transition: color .15s ease;
-    transition: color .15s ease;
   }
   a:not(.image):hover {
     color: @dark-purple;
     text-shadow: none;
     border: none;
-  }
-  .roll span:after {
-    color: @light-blue;
-    background: @dark-purple;
-  }
-
-  // Images
-  section img {
-    margin: 15px 0px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 4px solid #eeeeee;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -ms-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
-  }
-  a:hover img {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #13daec;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
-  }
-
-  // Navigation
-  .controls {
-    div.navigate-left,
-    div.navigate-left.enabled {
-      border-right-color: @light-blue;
-    }
-    div.navigate-right,
-    div.navigate-right.enabled {
-      border-left-color: @light-blue;
-    }
-    div.navigate-up,
-    div.navigate-up.enabled {
-      border-bottom-color: @light-blue;
-    }
-    div.navigate-down,
-    div.navigate-down.enabled {
-      border-top-color: @light-blue;
-    }
-    div.navigate-left.enabled:hover {
-      border-right-color: #71e9f4;
-    }
-    div.navigate-right.enabled:hover {
-      border-left-color: #71e9f4;
-    }
-    div.navigate-up.enabled:hover {
-      border-bottom-color: #71e9f4;
-    }
-    div.navigate-down.enabled:hover {
-      border-top-color: #71e9f4;
-    }
-  }
-
-  // Progress bar.
-  .progress {
-    background: rgba(0, 0, 0, 0.2);
-    span {
-      background: @light-purple;
-      -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-      -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-      -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-      -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-      transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-    }
   }
 
   // Typography
@@ -134,6 +82,10 @@ body {
     font-size: 1em; /* 16px */
     line-height: 1.5em; /* 24px */
     margin: 1.5em 0 1.5em 0;
+  }
+  ul, ol {
+    text-align: left;
+    list-style-type: none;
   }
   h1 {
     font-size: 1.5em; /* 24px */
@@ -189,7 +141,6 @@ body {
   pre code {
     padding: 0;
     font-family: Ubuntu Mono, monospace;
-    font-size: 1.5em;
     line-height: 1;
   }
 
@@ -201,7 +152,8 @@ body {
 
   // Light on dark.
   .invert {
-    h1, h3, a, .contact, .highlight {
+    background-color: @dark-purple;
+    h1, h3, a, &.contact, .highlight {
       color: @light-blue;
     }
     a {

@@ -7,7 +7,7 @@ ignore: true
 <section>
   <ul>
     {{#each pages}}{{#unless this.data.ignore}}
-    <li><a href="{{this.relativeLink}}">{{replace this.data.title '<br/>' ' '}}</a></li>
+    <li><a href="/assets/html/onstage.html#/{{this.relativeLink}}">{{replace this.data.title '<br/>' ' '}}</a></li>
     {{/unless}}{{/each}}
   </ul>
 </section>

@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-
     <title>{{replace title '<br/>' ' '}}</title>
 
-    <meta name="author" content="Orde Saunders">
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <link rel="stylesheet" href="css/reveal.css">
+    <script src="/js/helpers.js"></script>
+    <script src="/js/markdown.js"></script>
+    <link href='/css/core.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/theme/{{theme}}.css" />
   </head>
@@ -32,7 +25,7 @@
     </div>
 
     {{#if strap}}
-      {{glob '_src/views/slides/_common/strap.html'}}
+      {{{glob '_src/views/slides/_common/strap.html'}}}
     {{/if}}
     {{#if sponsors}}
       {{glob '_src/views/slides/fling/sponsors.html'}}
@@ -40,10 +33,13 @@
 
     <!--<div id="template-overlay" style="position:fixed; top:0; left:0; width:100%; opacity:0.5; z-index:1;"><img src="assets/img/css/scot-js-template.jpg" style="width:100%;" /></div>-->
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
 
-    <script src="js/main.js"></script>
+  <div id="progress-bar"></div>
+
+    <script src="js/highlight-reveal.js"></script>
+
+    <script src="js/core.js"></script>
+    <script src="js/dz-extensions.js"></script>
 
   </body>
 </html>
