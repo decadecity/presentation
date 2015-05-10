@@ -26,8 +26,15 @@
 
 @shade: #444; // Shadow colour.
 
-body {
+html {
   background-color: @forground;
+  &.invert {
+    background-color: @dark-purple;
+  }
+}
+
+body {
+  background-color: transparent;
   font-family: sans, sans-serif;
   border-radius: 0;
 }
@@ -345,7 +352,7 @@ section {
     margin-right: 5%;
   }
 }
-#decadecity-slides {
+#container {
   .code__caption {
     font-family: monospace;
     width: 100%;
@@ -409,4 +416,9 @@ section {
       margin-bottom: 0.5em;
     }
   }
+}
+
+//DZSlides
+section, .view head > title {
+  font-size: 20px;
 }

@@ -7,13 +7,12 @@
     <script src="/js/helpers.js"></script>
     <script src="/js/markdown.js"></script>
     <link href='/css/core.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="css/theme/{{theme}}.css" />
   </head>
 
   <body id="{{bodyid}}">
 
-    <div class="reveal" id="decadecity-slides">
+    <div class="reveal scaled" id="container">
 
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
@@ -28,13 +27,13 @@
       {{{glob '_src/views/slides/_common/strap.html'}}}
     {{/if}}
     {{#if sponsors}}
-      {{glob '_src/views/slides/fling/sponsors.html'}}
+      {{{glob '_src/views/slides/fling/sponsors.html'}}}
     {{/if}}
 
     <!--<div id="template-overlay" style="position:fixed; top:0; left:0; width:100%; opacity:0.5; z-index:1;"><img src="assets/img/css/scot-js-template.jpg" style="width:100%;" /></div>-->
 
 
-  <div id="progress-bar"></div>
+    <div id="progress-bar"></div>
 
     <script src="js/highlight-reveal.js"></script>
 

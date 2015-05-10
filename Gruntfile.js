@@ -88,9 +88,18 @@ module.exports = function(grunt) {
         options: {
         }
       },
-      livereload: {
+      live: {
         options: { livereload: true },
         files: ['public_html/**/*'],
+      }
+    },
+
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: 'public_html'
+        }
       }
     }
   });
@@ -98,7 +107,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('assemble' );
-  grunt.registerTask('default', ['less', 'assemble', 'copy', 'watch' ]);
+
+  grunt.registerTask('default', ['less', 'assemble', 'copy', 'connect', 'watch' ]);
 
 };
