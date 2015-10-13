@@ -1,0 +1,27 @@
+<section>
+  <h1>BEM in practice</h1>
+  <pre class="code fragment"><code>.read-more {}
+
+.read-more__title {}
+.read-more__content-expander {}
+
+.read-more__content-expander--open {}
+.read-more__content-expander--closed {}</code></pre>
+  <aside class="notes" data-markdown>
+Let's see what that looks like with some less abstract class names:
+
+>>>>
+
+These are some classes we might use for a "read more" presentation that has a title which, when you click on it, expands and collapses an content area.
+
+At the top level we have our "block" - in this case called "read-more" - that's the wrapper round the component as a whole.
+
+Within that we have "title" and "content expander" elements.  It's probable that "title" is going to be used as the name of an element at several different places throughout our code base so if we'd just used `.title` as a class name for those we're exposing ourselves to name space clashes.  However, as the name of a block, `.read-more` is going to be unique which means that `.read-more__title` is also going to be unique.
+
+Our content expander is going to need two states - 'open' and 'closed' - so this is where we use modifiers.  Again, if we just used `.open` and `.closed` on their own as classes then we expose ourselves to name space clashes, this way we know that these will be unique.
+
+The other benefit of this is that we have kept the specificity low: each of these is only one class.  If we had done this by nesting then we'd have a specificity of three classes.
+
+Using this methodology we're getting the dual benefits of avoiding conflicts in our single name space and keeping specificity low.
+  </aside>
+</section>

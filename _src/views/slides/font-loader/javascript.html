@@ -1,0 +1,19 @@
+<section>
+  <h1>Register the font with the font loader</h1>
+<p><div class="code__caption"><img src="assets/img/file.svg" class="code__caption__icon"/>webfont.js</div>
+<pre class="code"><code>(function(window,document,undefined){var j=void 0,k=!0,l=null,p=!1;function q(a)&hellip;
+
+WebFont.load({
+  custom: {
+    families: ['Custom-Font']
+  }
+});</code></pre></p>
+
+<aside class="notes" data-markdown>
+Now you need to register your font with the font loader.
+
+At the top of this file we've got the library code and below that we register our font with the loader.
+
+This `webfont.js` is just one stand alone JavaScript file, for reasons we'll see in a sec you don't need to include this concatenated into your main JavaScript.
+</aside>
+</section>

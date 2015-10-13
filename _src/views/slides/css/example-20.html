@@ -1,0 +1,16 @@
+<section>
+  <h1>Time passes&hellip;</h1>
+  <pre class="code"><code>.error {
+  color: orange;
+}</code></pre>
+
+
+  <aside class="notes" data-markdown>
+Some time later we get a request to change the error presentation on the login page.  We open up dev tools, we inspect the element and we can see it's got a class of `.error`.  We change the colour from `red` to `orange` and it all looks good.
+
+However, because there was only one form on the login page what we didn't realise was that we've just changed all the errors across the site.  Next thing we know there's a P1 "blocking" bug assigned to us saying that all the errors on the site are broken.  We reduce the severity of the bug to "cosmetic" and take a look at what's going on.
+  </aside>
+</section>
+
+
+

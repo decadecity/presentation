@@ -1,0 +1,15 @@
+<section>
+  <h1>JavaScript binding</h1>
+  <ul>
+    <li>Prefixed classes: <code>.js-&hellip;</code></li>
+    <li>Data attributes: <code>[data-&hellip;]</code></li>
+  </ul>
+
+  <aside class="notes" data-markdown>
+Something that can create additional problems with CSS is JavaScript bindings.  When binding functionality to the UI it can be tempting to use the existing, presentational, classes.  The problem with this is that the functionality is now coupled to the presentation.
+
+To avoid this we need to use dedicated hooks, typically either prefixed classes or data attributes - both of these approaches have their advantages and disadvantages so work out which one you are going to use and stick to it.
+
+By using dedicated hooks to bind JavaScript means that you can move and re-use functionality without having to move and re-use the visual presentation.  Taking the example of the read more expander we might have tied the expand-collapse functionality to the title but that would mean if we wanted to add an additional trigger then we'd be refactoring both the CSS and the JavaScript but if we had a dedicated hook we can just add another one into the content and we're done.
+  </aside>
+</section>

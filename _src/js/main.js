@@ -21,7 +21,7 @@ Reveal.initialize({
     { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
     { src: 'js/highlight-reveal.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
     { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    { src: 'js/plugin/dc-notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
     // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
     //{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
   ]

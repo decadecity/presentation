@@ -1,0 +1,28 @@
+
+table {
+  background: @background;
+  .main & {
+    margin-bottom: 1.5em;
+  }
+  .reveal & {
+    margin: auto;
+  }
+}
+
+td, th {
+  background: @forground;
+  padding: 0.25em;
+}
+
+th {
+  background: @background;
+  color: @background-text;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table-cell--numeric {
+  text-align: right;
+}

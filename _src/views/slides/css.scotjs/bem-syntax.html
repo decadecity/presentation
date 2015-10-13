@@ -1,0 +1,32 @@
+<section>
+  <h1>BEM syntax</h1>
+  <dl class="fragment">
+    <dt>Block</dt><dd>Root of the component</dd>
+    <dt class="separator">Separator</dt><dd class="separator"><code>__</code> (Double underscore)</dd>
+    <dt>Element</dt><dd>Individual part of the component</dd>
+    <dt class="separator">Separator</dt><dd class="separator"><code>--</code> (Double hyphen)</dd>
+    <dt>Modifier</dt><dd>A variant or state</dd>
+  </dl>
+  <pre class="code fragment"><code>.block {}
+
+.block__element {}
+
+.block__element--modifier {}</code></pre>
+  <aside class="notes" data-markdown>
+BEM is how we get around the twin problem of a single name space and low specificity in CSS: we use a naming convention.
+
+>>>>
+
+We break our code into logical blocks which will often match modular components in our UI.  A block is the top level wrapping element of our module.
+
+Because we're going to need to style different parts of our block and we want to keep the specificity low - so no nesting - we're going to use elements to refer to these individual parts.  The class name of an element will consist of the block name followed by a double underscore and then the element name.
+
+Finally, we might need to have different variants of a block or element and for this we use a modifier which is prefixed with double hyphen.
+
+Here's what that looks like in practice:
+
+>>>>
+
+All these selectors have a specificity of one class.
+  </aside>
+</section>

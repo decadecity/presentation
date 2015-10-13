@@ -1,0 +1,32 @@
+<section>
+  <h1>Nesting</h1>
+  <pre class="code fragment fade-out" data-dc-remove="true" data-fragment-index="1"><code>.content-area {
+  div {
+    p {
+      &amp;:first-of-type {
+        span {
+        }
+      }
+    }
+  }
+}</code></pre>
+
+<pre class="fragment code fade-in" data-fragment-index="1"><code>.content-area {}
+.content-area div {}
+.content-area div p {}
+.content-area div p:first-of-type {}
+.content-area div p:first-of-type span {}</code></pre>
+
+  <aside class="notes" data-markdown>
+Looking at preprocessors it's very tempting to think that we can use them to create name spaces by nesting code, after all this looks a lot like block scope in curly brace languages.  However, just because it looks like something you are familiar with it doesn't mean that it actually works that way.
+
+This is what this code turns into:
+
+>>>>
+
+The problem here is that we've ended up with a lot of specificity and a tight coupling to our markup so this CSS is going to be fragile and hard to maintain.
+
+The important thing with preprocessors is to think about them in terms of the output, not the input.  You're still writing CSS that will be delivered to the browser.  There's no compiler doing any optimisations, you're just indirectly writing CSS.
+
+  </aside>
+</section>

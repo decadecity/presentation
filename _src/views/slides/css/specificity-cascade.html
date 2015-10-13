@@ -1,0 +1,33 @@
+<section>
+  <h1>Specificity and cascade</h1>
+
+<div class="source-compare">
+  <div class="source-compare__item source-compare__item--first">
+<pre class="code"><code data-noescape>.class {
+  <strike>color: red;</strike>
+}
+
+#id .class {
+  color: green;
+}</code></pre>
+  </div>
+  <div class="source-compare__item source-compare__item--operator">
+==
+  </div>
+  <div class="source-compare__item source-compare__item--second">
+<pre class="code"><code data-noescape>#id .class {
+  color: green;
+}
+
+.class {
+  <strike>color: red;</strike>
+}</code></pre>
+  </div>
+</div>
+
+  <aside class="notes" data-markdown>
+Specificity overrides the cascade in that if you have two rules with the same property declared then, regardless of the source order, the one with the higher specificity will take precedence.
+
+In this example we can see that the additional specificity of the ID means that it is taking effect even when it is earlier in the cascade.
+  </aside>
+</section>

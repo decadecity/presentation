@@ -1,0 +1,38 @@
+<section>
+  <h1>Rules Cascade</h1>
+<pre class="code"><code>&lt;div class="base alt"&gt;&hellip;&lt;/div&gt;</code></pre>
+
+<div class="source-compare">
+  <div class="source-compare__item source-compare__item--first">
+<pre class="code"><code data-noescape>.base {
+  <strike>color: red;</strike>
+}
+
+.alt {
+  color: green;
+}</code></pre>
+  </div>
+  <div class="source-compare__item source-compare__item--operator">
+!=
+  </div>
+  <div class="source-compare__item source-compare__item--second">
+<pre class="code"><code data-noescape>.alt {
+  <strike>color: green;</strike>
+}
+
+.base {
+  color: red;
+}</code></pre>
+  </div>
+</div>
+
+  <aside class="notes" data-markdown>
+Lets have a look at an example of what that means in practice.
+
+In the first case we have the `base` class declared as being red and then we have the `alt` class as green.  As both classes are applied to our element the second declaration takes precedence as it's later in the cascade - or source order
+
+In the second case we have reversed these two rules in the source and the effect is reversed.  The markup is the same, the rules are the same but the order has changed so the cascade is different and the effect is different.
+
+Now, it's fairly easy to understand what's happening here but imagine these rules are hundreds of lines apart in your source code and being used in different places across the site.  If you're not thinking about this and actively managing the cascade your code is going to be harder to maintain.
+  </aside>
+</section>
