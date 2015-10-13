@@ -16,7 +16,11 @@ These are some classes we might use for a "read more" presentation that has a ti
 
 At the top level we have our "block" - in this case called "read-more" - that's the wrapper round the component as a whole.
 
+<<<<<<< HEAD
 Within that we have "title" and "content expander" elements.  It's probable that "title" is going to be used as the name of an element at several different places throughout our code base so if we'd just used `.title` as a class name for those we're exposing ourselves to name space clashes.  However, as the name of a block, `.read-more` is going to be unique it means that `.read-more__title` is also going to be unique.
+=======
+Within that we have "title" and "content expander" elements.  It's probable that "title" is going to be used as the name of an element at several different places throughout our code base so if we'd just used `.title` as a class name for those we're exposing ourselves to name space clashes.  However, as the name of a block, `.read-more` is going to be unique which means that `.read-more__title` is also going to be unique.
+>>>>>>> 8f7b4e563ad9c932b6d20bfd1489aa38102aafe0
 
 Our content expander is going to need two states - 'open' and 'closed' - so this is where we use modifiers.  Again, if we just used `.open` and `.closed` on their own as classes then we expose ourselves to name space clashes, this way we know that these will be unique.
 
